@@ -11,8 +11,9 @@ function Custom_node_one({ data, isConnectable }) {
   return (
     <div className="">
       <Handle type="target" position={Position.Left} isConnectable={isConnectable} />
-      <div className='h-12 w-12 bg-white border-2  rounded-lg'>
-      <FaAws className='h-12 w-12 p-2' />
+      <label className='items-center justify-center ' htmlFor="text">Amazon Web Services</label>
+      <div className='h-12 w-38 bg-white   rounded-lg '>
+      <FaAws className='h-12 w-12 p-2 text-center ml-[6vh]' />
       </div>
       {/* <Handle
         type="source"
