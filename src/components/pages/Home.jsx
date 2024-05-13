@@ -56,12 +56,14 @@ import Features from '../layout/Features'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 import Hero_Section from '../layout/Hero_Section'
+import Hero_Section_V2 from '../layout/Hero_Section_V2'
 
 const Home = () => {
 
   return (
     <div className=''>
       <Header/>
+      <Hero_Section_V2/>
       <Hero_Section/>
       <Features/>
       <Canvas_Feature/>
