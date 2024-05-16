@@ -62,7 +62,7 @@ import Hero_Section_V2 from '../layout/Hero_Section_V2'
 const Home = () => {
 
   return (
-    <div className=''>
+    <div className=' overflow-x-0'>
       <Header/>
       <Hero_Section_V2/>
       <Features_V2/>
