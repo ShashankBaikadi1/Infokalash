@@ -58,7 +58,6 @@ const initialNodes = [
     id: 'node-13',
     type: 'TopFour',
     position: { x: 1135.7, y: -172.3 },
-
     className: 'rounded-full',
     pos: Position.Right,
 
