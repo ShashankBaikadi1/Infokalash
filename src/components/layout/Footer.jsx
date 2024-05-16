@@ -145,7 +145,7 @@
 
 //nice
 import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
-import logo from '../../assets/images/vector1.png';
+// import logo from '../../assets/images/vector1.png';
 
 const Footer = () => {
   return (

@@ -53,9 +53,10 @@
 import Canvas_Feature from '../layout/Canvas_Feature'
 import Client_Carousel from '../layout/Client_Carousel'
 import Features from '../layout/Features'
+import Features_V2 from '../layout/Features_V2'
 import Footer from '../layout/Footer'
 import Header from '../layout/Header'
-import Hero_Section from '../layout/Hero_Section'
+// import Hero_Section from '../layout/Hero_Section'
 import Hero_Section_V2 from '../layout/Hero_Section_V2'
 
 const Home = () => {
@@ -64,7 +65,8 @@ const Home = () => {
     <div className=''>
       <Header/>
       <Hero_Section_V2/>
-      <Hero_Section/>
+      <Features_V2/>
+      {/* <Hero_Section/> */}
       <Features/>
       <Canvas_Feature/>
  <Client_Carousel/>
