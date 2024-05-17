@@ -451,8 +451,8 @@ const Features_V2 = () => {
           </div>
         </motion.div>
       </div>
-      <div className="image-container flex  h-[65vh] mt-5 w-[90vh] border border-blue-700 ">
-        {selectedImage && <img src={selectedImage} alt="Selected Image" className="h-[60vh] " />}
+      <div className="image-container flex  h-[65vh] mt-5 w-[90vh] border border-blue-700 rounded-md ">
+        {selectedImage && <img src={selectedImage} alt="Selected Image" className="h-[60vh] ml-2 " />}
       </div>
       </div>
     </div>
