@@ -58,6 +58,7 @@ import Footer from '../layout/Footer'
 import Header from '../layout/Header'
 // import Hero_Section from '../layout/Hero_Section'
 import Hero_Section_V2 from '../layout/Hero_Section_V2'
+import IndustryTabs from '../layout/Tab'
 
 const Home = () => {
 
@@ -67,7 +68,8 @@ const Home = () => {
       <Hero_Section_V2/>
       <Features_V2/>
       {/* <Hero_Section/> */}
-      <Features/>
+      {/* <Features/> */}
+      <IndustryTabs/>
       <Canvas_Feature/>
  <Client_Carousel/>
  <Footer/>
