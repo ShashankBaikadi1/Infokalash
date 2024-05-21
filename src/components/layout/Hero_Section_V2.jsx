@@ -33,7 +33,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="hero-section h-screen bg-cover bg-center flex items-center"
+      className="hero-section h-screen bg-cover bg-center flex items-center overflow-hidden"
       style={{ backgroundImage: `url(${heroBackground})` }}
     >
       {/* Render the cards */}

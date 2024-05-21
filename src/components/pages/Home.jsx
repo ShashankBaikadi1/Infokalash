@@ -50,6 +50,7 @@
 // }
 
 // export default Home
+import CallToAction from '../layout/CallToAction'
 import Canvas_Feature from '../layout/Canvas_Feature'
 import Client_Carousel from '../layout/Client_Carousel'
 import Features from '../layout/Features'
@@ -70,8 +71,9 @@ const Home = () => {
       {/* <Hero_Section/> */}
       {/* <Features/> */}
       <IndustryTabs/>
-      <Canvas_Feature/>
+      {/* <Canvas_Feature/> */}
  <Client_Carousel/>
+ <CallToAction/>
  <Footer/>
     </div>
   )

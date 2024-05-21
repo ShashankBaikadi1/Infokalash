@@ -6,6 +6,7 @@ const Header = () => {
   const isSmallScreen = useBreakpointValue({ base: true, md: false });
 
   return (
+    <div className="overflow-x-0">
     <Flex position="sticky" top="0" zIndex="1000" bg="white" p={isSmallScreen ? '5px' : '10px'} alignItems="center" className="h-20" border={'1px'} borderColor={'gray.200'} >
 
       <Image src={logo} boxSize={isSmallScreen ? "30px" : "50px"} alt="Logo" mr="10px" ml="50px" />
@@ -23,6 +24,7 @@ const Header = () => {
           color='#ffffff'  >Contact Us</Button>
       </HStack>
     </Flex>
+    </div>
   );
 }
 
