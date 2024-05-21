@@ -128,7 +128,7 @@
 import React, { useState } from 'react';
 import image1 from '../../assets/images/u1.svg'; // adjust the path as needed
 import image2 from '../../assets/images/u2.svg'; // adjust the path as needed
-import image3 from '../../assets/images/card3.png'; // adjust the path as needed
+import image3 from '../../assets/images/Group 61.svg'; // adjust the path as needed
 import image4 from '../../assets/images/card4.png'; // adjust the path as needed
 import clientlogo from '../../assets/images/client-logo.png'; // adjust the path as needed
 
@@ -230,8 +230,8 @@ const FeatureList = () => {
           </div>
         </div>
         {selectedFeature !== null && (
-          <div className="flex- bg-white border border-blue-300 overflow-hidden hidden lg:flex relative h-[465px] flex-none" style={{ borderRadius: '6px 6px 0px 0px', aspectRatio: '610/406' }}>
-            <div className="flex-1 h-full pt-4 px-2 overflow-hidden hidden lg:flex absolute w-full" style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
+          <div className="flex-  border border-blue-300 overflow-hidden hidden lg:flex relative h-[465px] flex-none " style={{ borderRadius: '6px 6px 0px 0px', aspectRatio: '610/406' }}>
+            <div className="flex-1 h-full pt-4 px-2 overflow-hidden hidden lg:flex absolute w-[50vh] " style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
               <img className="shadow-sm w-full h-auto mt-auto" src={features[selectedFeature].img} loading="lazy" alt={features[selectedFeature].title} width="644" height="327" />
             </div>
           </div>

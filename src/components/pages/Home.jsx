@@ -60,7 +60,7 @@ import Header from '../layout/Header'
 // import Hero_Section from '../layout/Hero_Section'
 import Hero_Section_V2 from '../layout/Hero_Section_V2'
 import IndustryTabs from '../layout/Tab'
-
+import ValuesSection from '../../components/layout/ValuesSection'
 const Home = () => {
 
   return (
@@ -72,6 +72,7 @@ const Home = () => {
       {/* <Features/> */}
       <IndustryTabs/>
       {/* <Canvas_Feature/> */}
+  <ValuesSection/>
  <Client_Carousel/>
  <CallToAction/>
  <Footer/>
