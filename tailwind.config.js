@@ -9,6 +9,10 @@ export default {
       // boxShadow: {
       //   'white': '0 4px 6px rgba(255, 255, 255, 0.5)', // Adjust the shadow values as needed
       // },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+        sans: ['sans-serif'],
+      },
     },
   },
   plugins: [],

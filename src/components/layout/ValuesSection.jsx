@@ -1,126 +1,419 @@
+// import React from 'react';
+
+// const ValuesSection = () => {
+//   const tabs = [
+//     {
+//       title: 'Community Powered',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Community Powered</h3>
+//           <p className="text-gray-700">
+//             Our beginnings as a grassroots effort means we are a community
+//             powered organization - a community of open source contributors,
+//             business leaders, nonprofits and academics. We readily respond to
+//             development requests from both our open source and closed source
+//             communities.
+//           </p>
+//         </div>
+//       ),
+//     },
+//     {
+//       title: 'Freedom to Innovate',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Freedom to Innovate</h3>
+//           <p className="text-gray-700">
+//             Being community powered is driven by our belief in the freedom to
+//             innovate. Math belongs to the world and it should be accessible to
+//             people with a variety of skill sets and experiences. We have worked
+//             hard to build AI to do AI, providing barrier free access to the
+//             power of machine learning.
+//           </p>
+//         </div>
+//       ),
+//     },
+//     {
+//       title: 'Customer Empathy',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Customer Empathy</h3>
+//           <p className="text-gray-700">
+//             Working closely with the community and our customers gives us great
+//             empathy for those we work with. If additional functionality is
+//             needed to help you achieve your goals, we're going to co-innovate
+//             right beside you. We want to do everything in our power to help you
+//             succeed.
+//           </p>
+//         </div>
+//       ),
+//     },
+//     {
+//       title: 'Do Good',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Do Good</h3>
+//           <p className="text-gray-700">
+//             We embrace the idea that we should use our knowledge and experience
+//             for good, so responsible development and model transparency are
+//             corporate level initiatives for us. We regularly seek out
+//             opportunities in our communities where we can make a positive impact
+//             with AI.
+//           </p>
+//         </div>
+//       ),
+//     },
+//   ];
+
+//   return (
+//     <div className="container mx-auto py-8">
+//       <div className="flex flex-col md:flex-row">
+//         <div className="w-full md:w-1/4">
+//           <ol className="list-none">
+//             {tabs.map((tab, index) => (
+//               <li
+//                 key={index}
+//                 className={`py-4 cursor-pointer border-b border-gray-200 ${
+//                   index === 0 ? 'font-bold' : ''
+//                 }`}
+//               >
+//                 <h4 className="text-lg">{tab.title}</h4>
+//               </li>
+//             ))}
+//           </ol>
+//         </div>
+//         <div className="w-full md:w-3/4 md:pl-8">
+//           <div className="p-4 bg-gray-100 rounded-lg">
+//             {tabs.map((tab, index) => (
+//               <div
+//                 key={index}
+//                 className={`${index !== 0 ? 'hidden' : ''}`}
+//               >
+//                 {tab.content}
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ValuesSection;
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+
+// // Import images
+// import communityPoweredImage from '../../assets/images/back1.jpg';
+// import freedomToInnovateImage from '../../assets/images/back2.jpg';
+// import customerEmpathyImage from '../../assets/images/back3.jpg';
+// import doGoodImage from '../../assets/images/back4.jpg';
+
+// const ValuesSection = () => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   const tabs = [
+//     {
+//       title: 'Community Powered',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Community Powered</h3>
+//           <p className="text-gray-700">
+//             Our beginnings as a grassroots effort means we are a community
+//             powered organization - a community of open source contributors,
+//             business leaders, nonprofits and academics. We readily respond to
+//             development requests from both our open source and closed source
+//             communities.
+//           </p>
+//         </div>
+//       ),
+//       image: communityPoweredImage,
+//     },
+//     {
+//       title: 'Freedom to Innovate',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Freedom to Innovate</h3>
+//           <p className="text-gray-700">
+//             Being community powered is driven by our belief in the freedom to
+//             innovate. Math belongs to the world and it should be accessible to
+//             people with a variety of skill sets and experiences. We have worked
+//             hard to build AI to do AI, providing barrier free access to the
+//             power of machine learning.
+//           </p>
+//         </div>
+//       ),
+//       image: freedomToInnovateImage,
+//     },
+//     {
+//       title: 'Customer Empathy',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Customer Empathy</h3>
+//           <p className="text-gray-700">
+//             Working closely with the community and our customers gives us great
+//             empathy for those we work with. If additional functionality is
+//             needed to help you achieve your goals, we're going to co-innovate
+//             right beside you. We want to do everything in our power to help you
+//             succeed.
+//           </p>
+//         </div>
+//       ),
+//       image: customerEmpathyImage,
+//     },
+//     {
+//       title: 'Do Good',
+//       content: (
+//         <div>
+//           <h3 className="text-2xl font-bold mb-2">Do Good</h3>
+//           <p className="text-gray-700">
+//             We embrace the idea that we should use our knowledge and experience
+//             for good, so responsible development and model transparency are
+//             corporate level initiatives for us. We regularly seek out
+//             opportunities in our communities where we can make a positive impact
+//             with AI.
+//           </p>
+//         </div>
+//       ),
+//       image: doGoodImage,
+//     },
+//   ];
+
+//   return (
+//     <div className="container mx-auto py-8">
+//       <div className="flex flex-col md:flex-row">
+//         <div className="w-full md:w-1/4">
+//           <ol className="list-none">
+//             {tabs.map((tab, index) => (
+//               <li
+//                 key={index}
+//                 className={`py-4 cursor-pointer border-b border-gray-200 relative ${
+//                   index === activeTab ? 'font-bold' : ''
+//                 }`}
+//                 onMouseOver={() => setActiveTab(index)}
+//               >
+//                 <h4 className="text-lg inline-block">{tab.title}</h4>
+//                 <span
+//                   className={`absolute left-0 h-full bg-yellow-400 transition-all duration-300 ${
+//                     index === activeTab ? 'w-1' : 'w-0'
+//                   }`}
+//                 ></span>
+//               </li>
+//             ))}
+//           </ol>
+//         </div>
+//         <div className="w-full md:w-3/4 md:pl-8">
+//           <div className="p-4 bg-gray-100 rounded-lg">
+//             {tabs.map((tab, index) => (
+//               <div
+//                 key={index}
+//                 className={`${index !== activeTab ? 'hidden' : ''}`}
+//               >
+//                 <img
+//                   src={tab.image}
+//                   alt={`${tab.title} Image`}
+//                   className="mb-4"
+//                 />
+//                 {tab.content}
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ValuesSection;
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 
-const ValuesSection = () => {
-  const [activeTab, setActiveTab] = useState('community-powered-item-6e213df3a5');
+// Import images
+import communityPoweredImage from '../../assets/images/back1.jpg';
+import freedomToInnovateImage from '../../assets/images/back2.jpg';
+import customerEmpathyImage from '../../assets/images/back3.jpg';
+import doGoodImage from '../../assets/images/back4.jpg';
 
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
-  };
+const ValuesSection = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const tabs = [
+    {
+      title: 'Community Powered',
+      image: communityPoweredImage,
+    },
+    {
+      title: 'Freedom to Innovate',
+      image: freedomToInnovateImage,
+    },
+    {
+      title: 'Customer Empathy',
+      image: customerEmpathyImage,
+    },
+    {
+      title: 'Do Good',
+      image: doGoodImage,
+    },
+  ];
 
   return (
-    <div id="community-powered" className="container mx-auto">
-      <div className="flex flex-col md:flex-row">
-        <div id="slide1_controls" className="md:w-1/3">
-          <ol role="tablist" className="space-y-4" aria-multiselectable="false">
-            <li 
-              role="tab"
-              id="community-powered-item-6e213df3a5-tab"
-              className={`cursor-pointer py-2 ${activeTab === 'community-powered-item-6e213df3a5' ? 'text-blue-600' : 'text-gray-600'}`}
-              aria-controls="community-powered-item-6e213df3a5-tabpanel"
-              tabIndex="0"
-              onClick={() => handleTabClick('community-powered-item-6e213df3a5')}
-              aria-selected={activeTab === 'community-powered-item-6e213df3a5'}
-            >
-              <h4 className="text-lg font-semibold">Community Powered</h4>
-            </li>
-            <li 
-              role="tab"
-              id="community-powered-item-b3119388c2-tab"
-              className={`cursor-pointer py-2 ${activeTab === 'community-powered-item-b3119388c2' ? 'text-blue-600' : 'text-gray-600'}`}
-              aria-controls="community-powered-item-b3119388c2-tabpanel"
-              tabIndex="-1"
-              onClick={() => handleTabClick('community-powered-item-b3119388c2')}
-              aria-selected={activeTab === 'community-powered-item-b3119388c2'}
-            >
-              <h4 className="text-lg font-semibold">Freedom to Innovate</h4>
-            </li>
-            <li 
-              role="tab"
-              id="community-powered-item-ae8fab38f3-tab"
-              className={`cursor-pointer py-2 ${activeTab === 'community-powered-item-ae8fab38f3' ? 'text-blue-600' : 'text-gray-600'}`}
-              aria-controls="community-powered-item-ae8fab38f3-tabpanel"
-              tabIndex="-1"
-              onClick={() => handleTabClick('community-powered-item-ae8fab38f3')}
-              aria-selected={activeTab === 'community-powered-item-ae8fab38f3'}
-            >
-              <h4 className="text-lg font-semibold">Customer Empathy</h4>
-            </li>
-            <li 
-              role="tab"
-              id="community-powered-item-7e2ac19e3e-tab"
-              className={`cursor-pointer py-2 ${activeTab === 'community-powered-item-7e2ac19e3e' ? 'text-blue-600' : 'text-gray-600'}`}
-              aria-controls="community-powered-item-7e2ac19e3e-tabpanel"
-              tabIndex="-1"
-              onClick={() => handleTabClick('community-powered-item-7e2ac19e3e')}
-              aria-selected={activeTab === 'community-powered-item-7e2ac19e3e'}
-            >
-              <h4 className="text-lg font-semibold">Do Good</h4>
-            </li>
-          </ol>
+    <div>
+        <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto'>
+Infokalash Core Values</div>
+    <div className="flex justify-center items-center h-[70vh] ">
+    
+      <div className="w-3/4 flex">
+        <div className="w-1/4 ">
+          <ul className="list-none ">
+            {tabs.map((tab, index) => (
+              <li
+                key={index}
+                className={`py-4 cursor-pointer relative  ${
+                  index === activeTab ? 'font-bold ' : ''
+                }`}
+                onMouseOver={() => setActiveTab(index)}
+              >
+                <span
+                  className={`absolute left-0 h-[5vh] bg-blue-400 transition-all duration-300 ${
+                    index === activeTab ? 'w-1 ' : 'w-0 '
+                  }`}
+                ></span>
+                <h4 className="text-lg pl-4 font-roboto">{tab.title}</h4>
+              </li>
+            ))}
+          </ul>
         </div>
-        <div id="slide1_container" className="md:w-2/3">
-          <div id="slide1_images">
-            <div id="community-powered-item-6e213df3a5-tabpanel" role="tabpanel" aria-labelledby="community-powered-item-6e213df3a5-tab" tabIndex="0" className={`${activeTab === 'community-powered-item-6e213df3a5' ? 'block' : 'hidden'}`}>
-              <div className="bg-gray-200 p-4 rounded-md">
-                <h3 className="text-2xl font-semibold">Community Powered</h3>
-                <div className="flex flex-col md:flex-row mt-4">
-                  <div className="md:w-1/3">
-                    <img src="/path/to/community-powered-2x.png" className="hidden md:block" alt="Lightbulb" />
-                    <img src="/path/to/community-powered-2x.png" className="block md:hidden" alt="Lightbulb" />
-                  </div>
-                  <div className="md:w-2/3 mt-4 md:mt-0">
-                    <p>Our beginnings as a grassroots effort means we are a community powered organization - a community of open source contributors, business leaders, nonprofits and academics. We readily respond to development requests from both our open source and closed source communities.</p>
-                  </div>
-                </div>
-              </div>
+        <div className="w-3/4 p-2 rounded-sm border-2">
+          {tabs.map((tab, index) => (
+            <div
+              key={index}
+              className={`${index !== activeTab ? 'hidden' : ''}`}
+            >
+              <img
+                src={tab.image}
+                alt={`${tab.title} Image`}
+                className="max-w-full h-auto"
+              />
             </div>
-            <div id="community-powered-item-b3119388c2-tabpanel" role="tabpanel" aria-labelledby="community-powered-item-b3119388c2-tab" tabIndex="0" className={`${activeTab === 'community-powered-item-b3119388c2' ? 'block' : 'hidden'}`}>
-              <div className="bg-gray-200 p-4 rounded-md">
-                <h3 className="text-2xl font-semibold">Freedom to Innovate</h3>
-                <div className="flex flex-col md:flex-row mt-4">
-                  <div className="md:w-1/3">
-                    <img src="/path/to/do-good-copy-2x.png" className="hidden md:block" alt="Lightbulb" />
-                    <img src="/path/to/do-good-copy-2x.png" className="block md:hidden" alt="Lightbulb" />
-                  </div>
-                  <div className="md:w-2/3 mt-4 md:mt-0">
-                    <p>We believe in the freedom to innovate and challenge the status quo. Our technology solutions are designed to give our community the tools to innovate and create without restrictions.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="community-powered-item-ae8fab38f3-tabpanel" role="tabpanel" aria-labelledby="community-powered-item-ae8fab38f3-tab" tabIndex="0" className={`${activeTab === 'community-powered-item-ae8fab38f3' ? 'block' : 'hidden'}`}>
-              <div className="bg-gray-200 p-4 rounded-md">
-                <h3 className="text-2xl font-semibold">Customer Empathy</h3>
-                <div className="flex flex-col md:flex-row mt-4">
-                  <div className="md:w-1/3">
-                    <img src="/path/to/do-good-copy-2x.png" className="hidden md:block" alt="Lightbulb" />
-                    <img src="/path/to/do-good-copy-2x.png" className="block md:hidden" alt="Lightbulb" />
-                  </div>
-                  <div className="md:w-2/3 mt-4 md:mt-0">
-                    <p>Our approach is centered around customer empathy. We strive to understand the needs and challenges of our customers to deliver solutions that make a real difference in their lives.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="community-powered-item-7e2ac19e3e-tabpanel" role="tabpanel" aria-labelledby="community-powered-item-7e2ac19e3e-tab" tabIndex="0" className={`${activeTab === 'community-powered-item-7e2ac19e3e' ? 'block' : 'hidden'}`}>
-              <div className="bg-gray-200 p-4 rounded-md">
-                <h3 className="text-2xl font-semibold">Do Good</h3>
-                <div className="flex flex-col md:flex-row mt-4">
-                  <div className="md:w-1/3">
-                    <img src="/path/to/do-good-copy-2x.png" className="hidden md:block" alt="Lightbulb" />
-                    <img src="/path/to/do-good-copy-2x.png" className="block md:hidden" alt="Lightbulb" />
-                  </div>
-                  <div className="md:w-2/3 mt-4 md:mt-0">
-                    <p>Doing good is at the heart of our mission. We aim to make a positive impact in the world through our work and initiatives, ensuring that we contribute to the greater good of society.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };
 
 export default ValuesSection;
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+
+// const ValuesSection = () => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   const tabs = [
+//     {
+//       title: 'Community Powered',
+//       text: 'This is the text for Community Powered',
+//     },
+//     {
+//       title: 'Freedom to Innovate',
+//       text: 'This is the text for Freedom to Innovate',
+//     },
+//     {
+//       title: 'Customer Empathy',
+//       text: 'This is the text for Customer Empathy',
+//     },
+//     {
+//       title: 'Do Good',
+//       text: 'This is the text for Do Good',
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto  '>Infokalash Core Values</div>
+//       <div className="flex justify-center items-center h-[70vh] ">
+//         <div className="w-3/4 flex">
+//           <div className="w-1/4 bg-red-200 mt-10 ">
+//             <ul className="list-none ">
+//               {tabs.map((tab, index) => (
+            
+//                 <li
+//   role=""
+
+//   className={` ${index === activeTab ? ' font-bold ' : ''}`}//text-bold on hover 
+ 
+//   tabIndex={index === activeTab ? "" : "-1"}
+ 
+//   aria-selected={index === activeTab}
+//   onMouseEnter={() => setActiveTab(index)}
+  
+//   style={{
+//     position: 'relative',
+//   }}
+// >
+//   <h4 className="ml-8 p-2 text-xl font-roboto  ">{tab.title}</h4>
+//   <span
+//     className=" -mt-[9.5vh]"//line up d down 
+//     style={{
+//       position: 'absolute',
+//       left: 0,
+//       height: '13vh',
+//       backgroundColor: '#a3a3a3',
+//       transition: 'all 0.3s',
+//       width: '2%',
+//       zIndex: 1,
+//     }}
+//   ></span>
+//   <span
+//     className={`-mt-10 absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-blue-400 w-1.5 ' : 'bg-blue-400 w-0 '}`}
+//     style={{
+//       zIndex: 2,
+//     }}
+//   ></span>
+// </li>
+//               ))}
+//             </ul>
+//           </div>
+//           <div className=" p-2 rounded-md border-2 w-[130vh] h-[50vh] ml-12  bg-gray-200 text-center">
+//             {tabs.map((tab, index) => (
+//               <div
+//                 key={index}
+//                 className={` ${index !== activeTab ? 'hidden' : ''}`}
+//               >
+//                 <p className=" ">{tab.text}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ValuesSection;
+
+

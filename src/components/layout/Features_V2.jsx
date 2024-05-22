@@ -183,7 +183,7 @@ const FeatureList = () => {
       <div>
         <img src={clientlogo} alt="Client Logo" className="ml-12 w-[195vh]" />
       </div>
-      <div className="text-gray-700 font-bold mb-6 ml-[7vh] text-4xl mt-5">
+      <div className="text-gray-700 font-bold mb-6 ml-[7vh] text-4xl mt-20">
         Provide <span className="text-blue-700">trusted data</span> with less effort and more adoption
       </div>
       <div className="flex gap-2">

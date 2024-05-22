@@ -209,8 +209,8 @@ const IndustryTabs = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl relative z-20 mt-10">
-      <h2 className="mx-auto max-w-xs md:max-w-md lg:max-w-lg text-center text-bold block text-2xl md:text-3xl lg:text-4xl mb-10 md:mb-14">
+    <div className="mx-auto max-w-7xl relative z-20 mt-20">
+      <h2 className="mx-auto max-w-xs md:max-w-md lg:max-w-lg text-center text-bold block text-2xl md:text-3xl  font-bold lg:text-4xl mb-10 md:mb-14">
         Empower teams across industries &amp; departments
       </h2>
       <div className="flex flex-col overflow-hidden">
@@ -220,7 +220,7 @@ const IndustryTabs = () => {
               <li
                 key={tab.id}
                 className={`w-full relative top-px text-center cursor-pointer hover:text-gray-600 border-b-4 font-heading flex justify-between items-center md:text-lg transition-all flex-1 ${
-                  activeTab === tab.id ? 'bg-blue-100 text-gray-600 border-b-blue-500' : 'bg-transparent text-gray-200 border-b-gray-10'
+                  activeTab === tab.id ? 'bg-blue-100 text-gray-600 border-b-blue-500' : 'bg-transparent text-gray-600 border-b-gray-10'
                 }`}
               >
                 <button

@@ -61,18 +61,30 @@ import Header from '../layout/Header'
 import Hero_Section_V2 from '../layout/Hero_Section_V2'
 import IndustryTabs from '../layout/Tab'
 import ValuesSection from '../../components/layout/ValuesSection'
+import Hero_Section_V3 from '../layout/Hero_Section_V3'
+import CarouselComponent from '../layout/CarouselComponent'
+import CarouselFeature from '../layout/CarouselFeature'
+// import { StickySlider } from '../layout/StickySlider'
 const Home = () => {
 
   return (
     <div className=' overflow-x-0'>
       <Header/>
+      {/* <Hero_Section_V3/> */}
       <Hero_Section_V2/>
+      <CarouselFeature/>
+      <div className='mt-'>
       <Features_V2/>
+      </div>
+      <CarouselComponent />
       {/* <Hero_Section/> */}
       {/* <Features/> */}
+      <div className='mt-20'>
       <IndustryTabs/>
+      </div>
       {/* <Canvas_Feature/> */}
-  <ValuesSection/>
+<ValuesSection/>
+{/* <StickySlider/> */}
  <Client_Carousel/>
  <CallToAction/>
  <Footer/>
