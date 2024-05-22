@@ -209,9 +209,9 @@ const IndustryTabs = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl relative z-20 mt-20">
+    <div className="mx-auto max-w-7xl relative z-20 mt-0 font-roboto">
       <h2 className="mx-auto max-w-xs md:max-w-md lg:max-w-lg text-center text-bold block text-2xl md:text-3xl  font-bold lg:text-4xl mb-10 md:mb-14">
-        Empower teams across industries &amp; departments
+       <span className='text-blue-700'>Empower teams</span>  across industries &amp; departments
       </h2>
       <div className="flex flex-col overflow-hidden">
         <nav className="relative before:content-[''] before:block before:h-1 before:w-full before:bg-gray-10 before:absolute before:-bottom-px before:left-0">
@@ -249,13 +249,13 @@ const IndustryTabs = () => {
                   <div className="sm:flex">
                     <div className="sm:w-1/3">
                       <div
-                        className="rounded-l-[1.4rem] w-[40vh] hidden sm:block sm:h-full bg-no-repeat bg-cover bg-center"
+                        className="rounded-l-[1.4rem] w-[40vh] hidden sm:block sm:h-[50vh] bg-no-repeat bg-cover bg-center"
                         style={{
                           backgroundImage: `url(${tab.items[selectedItem[tab.id]].imageSrc})`,
                         }}
                       ></div>
                       <div
-                        className="w-[40vh] h-44 sm:hidden bg-no-repeat bg-cover bg-center"
+                        className="w-[40vh] h-[50vh] sm:hidden bg-no-repeat  bg-center"
                         style={{
                           backgroundImage: `url(${tab.items[selectedItem[tab.id]].imageSrc})`,
                         }}
@@ -283,7 +283,7 @@ const IndustryTabs = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-[50vh]">
+              <div className="w-[50vh] h-[50vh]">
                 {tab.items.map((item, index) => (
                   <h1
                     key={index}

@@ -34,7 +34,7 @@ const CarouselFeature = () => {
   };
 
   return (
-    <div className="carousel flex flex-col items-center mx-auto  h-[60vh] w-[200vh]">
+    <div className="carousel flex flex-col items-center mx-auto  h-[85vh] w-[200vh] bg-blue-100 p-8 rounded-lg">
       <h2 className="carousel-heading text-4xl font-bold mt-10 font-roboto  ">Enterprise need</h2>
       <div className="carousel-content relative">
         <div className="carousel-slide p-4  h-[50vh] w-[200vh] ">
@@ -43,13 +43,13 @@ const CarouselFeature = () => {
         </div>
         <div className="carousel-controls absolute top-1/2 left-0 right-0 flex justify-between -translate-y-1/2">
           <button
-            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center"
+            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center ml-12"
             onClick={handlePrevClick}
           >
             <span className="carousel-control-icon">&#60;</span>
           </button>
           <button
-            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center"
+            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center mr-12"
             onClick={handleNextClick}
           >
             <span className="carousel-control-icon">&#62;</span>

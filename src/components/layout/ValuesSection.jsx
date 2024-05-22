@@ -354,7 +354,7 @@ const ValuesSection = () => {
 
   return (
     <div>
-      <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto  '>Infokalash Core Values</div>
+      <div className='ml-[25vh] mt-[10vh] text-4xl font-bold font-roboto  '><span className='text-blue-700'>Infokalash </span> Core Values</div>
       <div className="flex justify-center items-center h-[70vh] ">
         <div className="w-3/4 flex">
           <div className="w-1/4 bg- mt-10 ">

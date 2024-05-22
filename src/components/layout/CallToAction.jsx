@@ -2,7 +2,7 @@ import React from 'react';
 
 const CallToAction = () => {
   return (
-    <div className="container relative z-20 text-center my-xl-3 py-1 py-md-4 py-lg-5 bg-black h-[60vh]">
+    <div className="font-roboto container relative z-20 text-center my-xl-3 py-1 py-md-4 py-lg-5 bg-black h-[60vh]">
       <div className="w-full">
         <div className="p-0 mt-[20vh]">
           <div className="mb-3">

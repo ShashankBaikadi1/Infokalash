@@ -72,18 +72,19 @@ const Home = () => {
       <Header/>
       <Hero_Section_V3/>
       {/* <Hero_Section_V2/> */}
-      <CarouselFeature/>
+      {/* <CarouselFeature/> */}
+      <ValuesSection/>
       <div className='mt-'>
       <Features_V2/>
       </div>
       <CarouselComponent />
       {/* <Hero_Section/> */}
       {/* <Features/> */}
-      <div className='mt-20'>
+      <div className='mt-'>
       <IndustryTabs/>
       </div>
       {/* <Canvas_Feature/> */}
-<ValuesSection/>
+
 {/* <StickySlider/> */}
  <Client_Carousel/>
  <CallToAction/>

@@ -157,18 +157,7 @@ const features = [
     description: "Create a marketplace of complete data products, curated for each domain team.",
     img: image4
   },
-  {
-    id: 4,
-    title: "Lorem ipsum, dolor sit amet consectetur adipisicing.",
-    description: "Create a marketplace of complete data products, curated for each domain team.",
-    img: image4
-  },
-  {
-    id: 5,
-    title: " Lorem ipsum dolor sit amet.",
-    description: "Create a marketplace of complete data products, curated for each domain team.",
-    img: image4
-  },
+
 ];
 
 const FeatureList = () => {
@@ -179,10 +168,10 @@ const FeatureList = () => {
   };
 
   return (
-    <div className="container overflow-x-0">
-      <div>
+    <div className="container overflow-x-0 font-roboto">
+      {/* <div>
         <img src={clientlogo} alt="Client Logo" className="ml-12 w-[195vh]" />
-      </div>
+      </div> */}
       <div className="text-gray-700 font-bold mb-6 ml-[7vh] text-4xl mt-20">
         Provide <span className="text-blue-700">trusted data</span> with less effort and more adoption
       </div>
@@ -231,7 +220,7 @@ const FeatureList = () => {
         </div>
         {selectedFeature !== null && (
           <div className="flex-  border border-blue-300 overflow-hidden hidden lg:flex relative h-[465px] flex-none " style={{ borderRadius: '6px 6px 0px 0px', aspectRatio: '610/406' }}>
-            <div className="flex-1 h-full pt-4 px-2 overflow-hidden hidden lg:flex absolute w-[50vh] " style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
+            <div className="flex-1 h- pt-4 px-2 overflow-hidden hidden lg:flex absolute w-[50vh] " style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
               <img className="shadow-sm w-full h-auto mt-auto" src={features[selectedFeature].img} loading="lazy" alt={features[selectedFeature].title} width="644" height="327" />
             </div>
           </div>

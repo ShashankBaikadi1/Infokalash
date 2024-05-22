@@ -122,11 +122,11 @@ const CarouselComponent = () => {
   ];
 
   return (
-    <div className="text-center py-10">
-      <h2 className="text-2xl font-bold mb- font-roboto">Our Expertise</h2>
+    <div className="text-center py-10 bg- h-[100vh] font-roboto">
+      <h2 className="text-4xl font-bold mb- font-roboto mt-10 bg">Our <span className='text-blue-700'>Expertise</span></h2>
       <Slider {...settings}>
         {data.map((item, index) => (
-          <div key={index} className="flex justify-center items-center  h-[50vh]">
+          <div key={index} className="flex justify-center items-center  h-[70vh] bg-">
             <div className="flex items-center ml-20 w-[190vh]  ">
               <img src={item.image} alt={item.title} className="w-[40vh] p-4  h-[] mr-8" />
               <div className="text-left">
