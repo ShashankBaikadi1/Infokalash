@@ -30,9 +30,7 @@ const Hero_Section_V3 = () => {
           />
         </div>
       </div>
-      <button className="bg-blue-500 text-white py-2 px-4 rounded-full fixed bottom-4 right-4 hover:bg-blue-600 transition-colors duration-300">
-        Next
-      </button>
+ 
     </div>
   );
 };

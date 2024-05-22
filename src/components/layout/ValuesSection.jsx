@@ -242,93 +242,13 @@
 
 
 
-import React, { useState } from 'react';
-
-// Import images
-import communityPoweredImage from '../../assets/images/back1.jpg';
-import freedomToInnovateImage from '../../assets/images/back2.jpg';
-import customerEmpathyImage from '../../assets/images/back3.jpg';
-import doGoodImage from '../../assets/images/back4.jpg';
-
-const ValuesSection = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  const tabs = [
-    {
-      title: 'Community Powered',
-      image: communityPoweredImage,
-    },
-    {
-      title: 'Freedom to Innovate',
-      image: freedomToInnovateImage,
-    },
-    {
-      title: 'Customer Empathy',
-      image: customerEmpathyImage,
-    },
-    {
-      title: 'Do Good',
-      image: doGoodImage,
-    },
-  ];
-
-  return (
-    <div>
-        <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto'>
-Infokalash Core Values</div>
-    <div className="flex justify-center items-center h-[70vh] ">
-    
-      <div className="w-3/4 flex">
-        <div className="w-1/4 ">
-          <ul className="list-none ">
-            {tabs.map((tab, index) => (
-              <li
-                key={index}
-                className={`py-4 cursor-pointer relative  ${
-                  index === activeTab ? 'font-bold ' : ''
-                }`}
-                onMouseOver={() => setActiveTab(index)}
-              >
-                <span
-                  className={`absolute left-0 h-[5vh] bg-blue-400 transition-all duration-300 ${
-                    index === activeTab ? 'w-1 ' : 'w-0 '
-                  }`}
-                ></span>
-                <h4 className="text-lg pl-4 font-roboto">{tab.title}</h4>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="w-3/4 p-2 rounded-sm border-2">
-          {tabs.map((tab, index) => (
-            <div
-              key={index}
-              className={`${index !== activeTab ? 'hidden' : ''}`}
-            >
-              <img
-                src={tab.image}
-                alt={`${tab.title} Image`}
-                className="max-w-full h-auto"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-    </div>
-  );
-};
-
-export default ValuesSection;
-
-
-
-
-
-
-
-
 // import React, { useState } from 'react';
+
+// // Import images
+// import communityPoweredImage from '../../assets/images/back1.jpg';
+// import freedomToInnovateImage from '../../assets/images/back2.jpg';
+// import customerEmpathyImage from '../../assets/images/back3.jpg';
+// import doGoodImage from '../../assets/images/back4.jpg';
 
 // const ValuesSection = () => {
 //   const [activeTab, setActiveTab] = useState(0);
@@ -336,84 +256,164 @@ export default ValuesSection;
 //   const tabs = [
 //     {
 //       title: 'Community Powered',
-//       text: 'This is the text for Community Powered',
+//       image: communityPoweredImage,
 //     },
 //     {
 //       title: 'Freedom to Innovate',
-//       text: 'This is the text for Freedom to Innovate',
+//       image: freedomToInnovateImage,
 //     },
 //     {
 //       title: 'Customer Empathy',
-//       text: 'This is the text for Customer Empathy',
+//       image: customerEmpathyImage,
 //     },
 //     {
 //       title: 'Do Good',
-//       text: 'This is the text for Do Good',
+//       image: doGoodImage,
 //     },
 //   ];
 
 //   return (
 //     <div>
-//       <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto  '>Infokalash Core Values</div>
-//       <div className="flex justify-center items-center h-[70vh] ">
-//         <div className="w-3/4 flex">
-//           <div className="w-1/4 bg-red-200 mt-10 ">
-//             <ul className="list-none ">
-//               {tabs.map((tab, index) => (
-            
-//                 <li
-//   role=""
-
-//   className={` ${index === activeTab ? ' font-bold ' : ''}`}//text-bold on hover 
- 
-//   tabIndex={index === activeTab ? "" : "-1"}
- 
-//   aria-selected={index === activeTab}
-//   onMouseEnter={() => setActiveTab(index)}
-  
-//   style={{
-//     position: 'relative',
-//   }}
-// >
-//   <h4 className="ml-8 p-2 text-xl font-roboto  ">{tab.title}</h4>
-//   <span
-//     className=" -mt-[9.5vh]"//line up d down 
-//     style={{
-//       position: 'absolute',
-//       left: 0,
-//       height: '13vh',
-//       backgroundColor: '#a3a3a3',
-//       transition: 'all 0.3s',
-//       width: '2%',
-//       zIndex: 1,
-//     }}
-//   ></span>
-//   <span
-//     className={`-mt-10 absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-blue-400 w-1.5 ' : 'bg-blue-400 w-0 '}`}
-//     style={{
-//       zIndex: 2,
-//     }}
-//   ></span>
-// </li>
-//               ))}
-//             </ul>
-//           </div>
-//           <div className=" p-2 rounded-md border-2 w-[130vh] h-[50vh] ml-12  bg-gray-200 text-center">
+//         <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto'>
+// Infokalash Core Values</div>
+//     <div className="flex justify-center items-center h-[70vh] ">
+    
+//       <div className="w-3/4 flex">
+//         <div className="w-1/4 ">
+//           <ul className="list-none ">
 //             {tabs.map((tab, index) => (
-//               <div
+//               <li
 //                 key={index}
-//                 className={` ${index !== activeTab ? 'hidden' : ''}`}
+//                 className={`py-4 cursor-pointer relative  ${
+//                   index === activeTab ? 'font-bold ' : ''
+//                 }`}
+//                 onMouseOver={() => setActiveTab(index)}
 //               >
-//                 <p className=" ">{tab.text}</p>
-//               </div>
+//                 <span
+//                   className={`absolute left-0 h-[5vh] bg-blue-400 transition-all duration-300 ${
+//                     index === activeTab ? 'w-1 ' : 'w-0 '
+//                   }`}
+//                 ></span>
+//                 <h4 className="text-lg pl-4 font-roboto">{tab.title}</h4>
+//               </li>
 //             ))}
-//           </div>
+//           </ul>
+//         </div>
+//         <div className="w-3/4 p-2 rounded-sm border-2">
+//           {tabs.map((tab, index) => (
+//             <div
+//               key={index}
+//               className={`${index !== activeTab ? 'hidden' : ''}`}
+//             >
+//               <img
+//                 src={tab.image}
+//                 alt={`${tab.title} Image`}
+//                 className="max-w-full h-auto"
+//               />
+//             </div>
+//           ))}
 //         </div>
 //       </div>
+//     </div>
 //     </div>
 //   );
 // };
 
 // export default ValuesSection;
+
+
+
+
+
+
+
+
+import React, { useState } from 'react';
+
+const ValuesSection = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  const tabs = [
+    {
+      title: 'Community Powered',
+      text: 'This is the text for Community Powered',
+    },
+    {
+      title: 'Freedom to Innovate',
+      text: 'This is the text for Freedom to Innovate',
+    },
+    {
+      title: 'Customer Empathy',
+      text: 'This is the text for Customer Empathy',
+    },
+    {
+      title: 'Do Good',
+      text: 'This is the text for Do Good',
+    },
+  ];
+
+  return (
+    <div>
+      <div className='ml-[25vh] mt-[10vh] text-3xl font-bold font-roboto  '>Infokalash Core Values</div>
+      <div className="flex justify-center items-center h-[70vh] ">
+        <div className="w-3/4 flex">
+          <div className="w-1/4 bg- mt-10 ">
+            <ul className="list-none ">
+              {tabs.map((tab, index) => (
+            
+                <li
+  role=""
+
+  className={` ${index === activeTab ? ' font-bold ' : ''}`}//text-bold on hover 
+ 
+  tabIndex={index === activeTab ? "" : "-1"}
+ 
+  aria-selected={index === activeTab}
+  onMouseEnter={() => setActiveTab(index)}
+  
+  style={{
+    position: 'relative',
+  }}
+>
+  <h4 className="ml-8 p-2 text-xl font-roboto  ">{tab.title}</h4>
+  <span
+    className=" -mt-[9.5vh]"//line up d down 
+    style={{
+      position: 'absolute',
+      left: 0,
+      height: '13vh',
+      backgroundColor: '#a3a3a3',
+      transition: 'all 0.3s',
+      width: '2%',
+      zIndex: 1,
+    }}
+  ></span>
+  <span
+    className={`-mt-10 absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-blue-400 w-1.5 ' : 'bg-blue-400 w-0 '}`}
+    style={{
+      zIndex: 2,
+    }}
+  ></span>
+</li>
+              ))}
+            </ul>
+          </div>
+          <div className=" p-2 rounded-md border-2 w-[130vh] h-[50vh] ml-12  bg-gray-200 text-center">
+            {tabs.map((tab, index) => (
+              <div
+                key={index}
+                className={` ${index !== activeTab ? 'hidden' : ''}`}
+              >
+                <p className=" ">{tab.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default ValuesSection;
 
 

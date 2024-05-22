@@ -70,8 +70,8 @@ const Home = () => {
   return (
     <div className=' overflow-x-0'>
       <Header/>
-      {/* <Hero_Section_V3/> */}
-      <Hero_Section_V2/>
+      <Hero_Section_V3/>
+      {/* <Hero_Section_V2/> */}
       <CarouselFeature/>
       <div className='mt-'>
       <Features_V2/>
