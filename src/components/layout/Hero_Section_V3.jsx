@@ -3,13 +3,14 @@ import Landing_Image from '../../assets/images/Landing_Img.png';
 
 const Hero_Section_V3 = () => {
   return (
-    <div className="flex bg-white h-[90vh] ml-5 font-sans">
+    <div  >
+    <div className="flex bg-white h-[90vh] ml-5 font-geist">
       <div className="flex flex-col md:flex-row mt-32 px-8">
         <div className="md:w-[80vh]">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-[#000000] ">
             Create faster <br /> writing drafts <br /> with <span className='text-blue-700'> AI</span>
           </h1>
-          <p className="text-lg md:text-xl mb-8">
+          <p className="text-lg font-semibold md:text-xl mb-8 ">
             Whether you're writing a speech, email or a meal plan, add your
             writing ideas to Compose within Microsoft Edge sidebar and get
             AI-generated draft to get you started, wherever you write online.
@@ -24,6 +25,7 @@ const Hero_Section_V3 = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

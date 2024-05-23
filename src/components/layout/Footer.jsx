@@ -7,14 +7,14 @@ import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/f
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 font-roboto">
+    <footer className="bg-gray-900 text-white py-12 font-geist">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
               {/* <img src={logo} alt="Company Logo" className="h-10 mr-2" />
                */}
-               <div className='bg-white p-2 '>
+               <div className='bg-white p-2 ml-5 '>
                <svg width="30" height="30" viewBox="0 0 514 457" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M324 0H511L349.75 227.5L188.5 455H0L324 0Z" fill="black"/>
             <path d="M323.012 454.995L513.049 454.994L427.31 336.755L348.019 227.498L256.003 359.5L323.012 454.995Z" fill="black"/>
@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
               <span className="text-xl font-bold ml-4">InfoKalash</span>
             </div>
-            <p className="text-gray-400 ">
+            <p className="text-gray-400 ml-5 ">
               DeshPande Startups Sandbox
               Gokul Rd,<br />near to Airport,
               Hubballi,<br /> Karnataka 580030

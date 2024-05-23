@@ -1,166 +1,82 @@
-// import React from 'react';
-// import Slider from 'react-slick';
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-// import image1 from '../../assets/images/card1.png'
-// import image2 from '../../assets/images/card2.png'
-// import image3 from '../../assets/images/card3.png'
-// const CarouselComponent = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     speed: 1000,
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     autoplaySpeed: 4000,
-//     nextArrow: <SampleNextArrow />,
-//     prevArrow: <SamplePrevArrow />
-//   };
+import React, { useState, useEffect } from 'react';
+import image1 from '../../assets/images/card1.png';
+import image2 from '../../assets/images/card2.png';
+import image3 from '../../assets/images/card3.png';
 
-//   const data = [
-//     {
-//       image: image1,
-//       title: 'Lorem ipsum dolor sit amet.',
-//       subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis nobis rem optio iusto excepturi quasi numquam illo. Rem, dolorem!'
-//     },
-//     {
-//       image: image2,
-//       title: 'Lorem, ipsum dolor.',
-//       subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit voluptas? Optio veniam corrupti numquam.'
-//     },
-//     {
-//       image: image3,
-//       title: 'Lorem ipsum dolor sit.',
-//       subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea!'
-//     }
-//   ];
-
-//   return (
-//     <div className="text-center py-10">
-//       <h2 className="text-2xl font-bold mb- bg-red-200 font-roboto">Our Expertise</h2>
-//       <Slider {...settings}>
-//         {data.map((item, index) => (
-//           <div key={index} className="flex justify-center items-center  h-[50vh]">
-//             <div className="flex items-center ml-20 w-[190vh] bg-yellow-200 ">
-//               <img src={item.image} alt={item.title} className="w-[40vh] p-4  h-[] mr-8" />
-//               <div className="text-left">
-//                 <h3 className="text-lg font-bold w-[80vh] bg-orange-200 font-roboto">{item.title}</h3>
-//                 <p className='font-roboto'>{item.subtitle}</p>
-//               </div>
-//             </div>
-//           </div>
-//         ))}
-//       </Slider>
-//     </div>
-//   );
-// };
-
-// const SampleNextArrow = (props) => {
-//   const { onClick } = props;
-//   return (
-//     <div
-//       className="absolute top-1/2 transform -translate-y-1/2 right-4 w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white cursor-pointer"
-//       onClick={onClick}
-//     >
-//       &gt;
-//     </div>
-//   );
-// };
-
-// const SamplePrevArrow = (props) => {
-//   const { onClick } = props;
-//   return (
-//     <div
-//       className="absolute top-1/2 transform -translate-y-1/2 left-4 w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white cursor-pointer"
-//       onClick={onClick}
-//     >
-//       &lt;
-//     </div>
-//   );
-// };
-
-// export default CarouselComponent;
-
-
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import image1 from '../../assets/images/card1.png'
-import image2 from '../../assets/images/card2.png'
-import image3 from '../../assets/images/card3.png'
 const CarouselComponent = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />
-  };
-
-  const data = [
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slides = [
     {
       image: image1,
       title: 'Lorem ipsum dolor sit amet.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis nobis rem optio iusto excepturi quasi numquam illo. Rem, dolorem!'
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis nobis rem optio iusto excepturi quasi numquam illo. Rem, dolorem!',
     },
     {
       image: image2,
       title: 'Lorem, ipsum dolor.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit voluptas? Optio veniam corrupti numquam.'
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit voluptas? Optio veniam corrupti numquam.',
     },
     {
       image: image3,
       title: 'Lorem ipsum dolor sit.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea!'
-    }
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea!',
+    },
   ];
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((currentSlide + 1) % slides.length);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [currentSlide, slides.length]);
+
+  const handlePrevClick = () => {
+    setCurrentSlide((currentSlide - 1 + slides.length) % slides.length);
+  };
+
+  const handleNextClick = () => {
+    setCurrentSlide((currentSlide + 1) % slides.length);
+  };
+
   return (
-    <div className="text-center py-10 bg- h-[100vh] font-roboto">
-      <h2 className="text-4xl font-bold mb- font-roboto mt-10 bg">Our <span className='text-blue-700'>Expertise</span></h2>
-      <Slider {...settings}>
-        {data.map((item, index) => (
-          <div key={index} className="flex justify-center items-center  h-[70vh] bg-">
-            <div className="flex items-center ml-20 w-[190vh]  ">
-              <img src={item.image} alt={item.title} className="w-[40vh] p-4  h-[] mr-8" />
-              <div className="text-left">
-                <h3 className="text-lg font-bold w-[80vh]  font-roboto">{item.title}</h3>
-                <p className='font-roboto'>{item.subtitle}</p>
-              </div>
+    <div className="carousel flex flex-col items-center mx-auto h-[100vh]  p- ">
+      <div className="text-center mt-[5vh] mb-10 text-5xl font-bold font-geist">
+        <span className="text-blue-700">Our </span>Expertise
+      </div>
+      <div className="carousel-content relative">
+        <div className="carousel-slide flex justify-center items-center h-[70vh] rounded-md bg-[#fbfcfd] border ml-6">
+          <div className="flex items-center ml-20 w-[182vh] ">
+            <img
+              src={slides[currentSlide].image}
+              alt={slides[currentSlide].title}
+              className="w-[40vh] p-4 h-[] mr-8"
+            />
+            <div className="text-left  w-[120vh] ">
+              <h3 className="slide-title text-lg font-bold w-[60vh] font-geist">
+                {slides[currentSlide].title}
+              </h3>
+              <p className="slide-subtitle font-geist">
+                {slides[currentSlide].subtitle}
+              </p>
             </div>
           </div>
-        ))}
-      </Slider>
-    </div>
-  );
-};
-
-const SampleNextArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute top-1/2 transform -translate-y-1/2 right-4 w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white cursor-pointer"
-      onClick={onClick}
-    >
-      &gt;
-    </div>
-  );
-};
-
-const SamplePrevArrow = (props) => {
-  const { onClick } = props;
-  return (
-    <div
-      className="absolute top-1/2 transform -translate-y-1/2 left-4 w-8 h-8 flex items-center justify-center border border-black rounded-full bg-white cursor-pointer"
-      onClick={onClick}
-    >
-      &lt;
+        </div>
+        <div className="carousel-controls absolute top-1/2 left-0 right-0 flex justify-between -translate-y-1/2">
+          <button
+            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center ml-12"
+            onClick={handlePrevClick}
+          >
+            <span className="carousel-control-icon">&#60;</span>
+          </button>
+          <button
+            className="carousel-control bg-black/50 text-white rounded-full w-10 h-10 flex items-center justify-center mr-8"
+            onClick={handleNextClick}
+          >
+            <span className="carousel-control-icon">&#62;</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

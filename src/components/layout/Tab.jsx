@@ -131,7 +131,7 @@ const IndustryTabs = () => {
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
-    // Reset the selected item to the first one when the tab changes
+
     setSelectedItem((prevState) => ({ ...prevState, [tab]: 0 }));
   };
 
@@ -209,22 +209,24 @@ const IndustryTabs = () => {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl relative z-20 mt-0 font-roboto">
-      <h2 className="mx-auto max-w-xs md:max-w-md lg:max-w-lg text-center text-bold block text-2xl md:text-3xl  font-bold lg:text-4xl mb-10 md:mb-14">
-       <span className='text-blue-700'>Empower teams</span>  across industries &amp; departments
+    <div className="  flex flex-col overflow-hidden ">
+      <div className=''>
+    <div className="ml-[8vh] max-w-7xl relative z-20 mt-0  font-geist ">
+      <h2 className="mx-auto max-w-xs md:max-w-md lg:max-w-lg text-center  text-bold block text-2xl md:text-3xl  font-bold lg:text-4xl mb-10 md:mb-14 ml-[65vh]">
+       <span className='text-blue-700 '>Empower teams</span> across industries &amp; departments
       </h2>
-      <div className="flex flex-col overflow-hidden">
-        <nav className="relative before:content-[''] before:block before:h-1 before:w-full before:bg-gray-10 before:absolute before:-bottom-px before:left-0">
-          <ul className="flex w-full mx-auto max-w-4xl">
+      <div className="flex flex-col overflow-hidden bg-[#fbfcfd] border       w-[193vh]  rounded-md p-8">
+        <nav className="relative before:content-[''] before:block before:h-1 before:w-full before:bg-gray-10 before:absolute before:-bottom-px before:left-0 ">
+          <ul className="flex w-full mx-auto max-w-4xl ">
             {tabs.map((tab) => (
               <li
                 key={tab.id}
-                className={`w-full relative top-px text-center cursor-pointer hover:text-gray-600 border-b-4 font-heading flex justify-between items-center md:text-lg transition-all flex-1 ${
-                  activeTab === tab.id ? 'bg-blue-100 text-gray-600 border-b-blue-500' : 'bg-transparent text-gray-600 border-b-gray-10'
+                className={`w-full relative top-px text-center cursor-pointer  hover:text-gray-600 border-b-4 font-heading flex justify-between items-center md:text-lg transition-all flex-1  ${
+                  activeTab === tab.id ? 'bg-blue-100 text-gray-600 border-b-blue-500 ' : ' text-gray-600 border-b-gray-10 '
                 }`}
               >
                 <button
-                  className="block w-full text-center mx-auto py-3.5 px-1.5 md:px-3.5 focus focus-visible:-outline-offset-4 focus-visible:outline-black"
+                  className="block w-full text-center mx-auto py-3.5 px-1.5 md:px-3.5 focus focus-visible:-outline-offset-4 focus-visible:outline-black "
                   onClick={() => handleTabClick(tab.id)}
                 >
                   {tab.label}
@@ -233,7 +235,7 @@ const IndustryTabs = () => {
             ))}
           </ul>
         </nav>
-        <main className="pt-3.5 md:pt-7 lg:pt-14">
+        <main className="pt-3.5 md:pt-7 lg:pt-14 ">
           {tabs.map((tab) => (
             <div
               key={tab.id}
@@ -300,6 +302,8 @@ const IndustryTabs = () => {
           ))}
         </main>
       </div>
+    </div>
+    </div>
     </div>
   );
 };

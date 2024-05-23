@@ -126,7 +126,7 @@
 
 
 import React, { useState } from 'react';
-import image1 from '../../assets/images/u1.svg'; // adjust the path as needed
+import image1 from '../../assets/images/undraw MDM.png'; // adjust the path as needed
 import image2 from '../../assets/images/u2.svg'; // adjust the path as needed
 import image3 from '../../assets/images/Group 61.svg'; // adjust the path as needed
 import image4 from '../../assets/images/card4.png'; // adjust the path as needed
@@ -168,25 +168,25 @@ const FeatureList = () => {
   };
 
   return (
-    <div className="container overflow-x-0 font-roboto">
+    <div className="container overflow-x-0 font-geist ">
       {/* <div>
         <img src={clientlogo} alt="Client Logo" className="ml-12 w-[195vh]" />
       </div> */}
-      <div className="text-gray-700 font-bold mb-6 ml-[7vh] text-4xl mt-20">
+      <div className="text-gray-700 font-bold mb-14 text-center text-5xl mt-8">
         Provide <span className="text-blue-700">trusted data</span> with less effort and more adoption
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 bg-[#fbfcfd] pt-12 pb-12 w-[194vh] ml-12 rounded-md border" >
         <div className="flex w-[vh] overflow-hidden rounded-[px] ml-12">
-          <div className="relative h-full w-[100vh] flex">
-            <div className="relative h-full w-[90vh] flex-none ml-5">
+          <div className="relative h-full w-[95vh] flex">
+            <div className="relative h-full w-[90vh] flex-none ml- ">
               {features.map((feature, index) => (
-                <div key={feature.id} className={` ${selectedFeature === feature.id ? 'border  border-blue-300 rounded-[6px]' : 'border-b-2 border-blue-50 '} ease-in-expo duration-3000 w-[90vh]`}>
+                <div key={feature.id} className={` ${selectedFeature === feature.id ? 'border  border-black rounded-[6px]' : 'border-b-2 border-blue-50 '} ease-in-expo duration-3000 w-[90vh]`}>
                   <div
                     id={`home-product-${feature.id}`}
                     className={`py-5 px-4 p1 !font-bold cursor-pointer flex items-center justify-between ${selectedFeature === feature.id ? 'text-blue-600' : 'text-gray-600'}`}
                     onClick={() => toggleFeature(feature.id)}
                   >
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-">
                       <div className="w-5 flex-none">{String(index + 1).padStart(2, '0')}</div>
                       <div>{feature.title}</div>
                     </div>
@@ -219,8 +219,8 @@ const FeatureList = () => {
           </div>
         </div>
         {selectedFeature !== null && (
-          <div className="flex-  border border-blue-300 overflow-hidden hidden lg:flex relative h-[465px] flex-none " style={{ borderRadius: '6px 6px 0px 0px', aspectRatio: '610/406' }}>
-            <div className="flex-1 h- pt-4 px-2 overflow-hidden hidden lg:flex absolute w-[50vh] " style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
+          <div className="flex-  border border-black overflow-hidden hidden lg:flex relative h-[465px] flex-none " style={{ borderRadius: '6px 6px 0px 0px', aspectRatio: '510/406' }}>
+            <div className="flex-1 h- pt-4 px-2 overflow-hidden hidden lg:flex absolute w-[80vh] " style={{ background: 'rgba(235, 236, 252, 0.1)' }}>
               <img className="shadow-sm w-full h-auto mt-auto" src={features[selectedFeature].img} loading="lazy" alt={features[selectedFeature].title} width="644" height="327" />
             </div>
           </div>

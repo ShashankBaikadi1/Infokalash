@@ -6,12 +6,13 @@ export default {
   ],
   theme: {
     extend: {
-      // boxShadow: {
-      //   'white': '0 4px 6px rgba(255, 255, 255, 0.5)', // Adjust the shadow values as needed
-      // },
+      boxShadow: {
+        'white': '0 1px 4px rgba(255, 255, 255, 0.9)', 
+      },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
         sans: ['sans-serif'],
+        geist: ['Geist', 'sans-serif'],
       },
     },
   },
