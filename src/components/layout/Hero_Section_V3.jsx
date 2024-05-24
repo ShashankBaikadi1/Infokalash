@@ -33,11 +33,11 @@
 // export default Hero_Section_V3;
 
 import React from 'react';
-import Landing_Image from '../../assets/images/Landing_Img.png';
+import Landing_Image from '../../assets/images/MDM.png';
 
 const Hero_Section_V3 = () => {
   return (
-    <div className="flex flex-col md:flex-row bg-white h-screen ml-5 md:ml-0 xl:ml-5 font-geist">
+    <div className="flex flex-col md:flex-row bg-white h-[90vh] ml-5 md:ml-0 xl:ml-5 font-geist">
       <div className="mt-10 md:mt-32 xl:mt-32 px-8 md:px-16 xl:px-8">
         <div className="md:w-full xl:w-[80vh]">
           <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold mb-6 text-[#000000]">
@@ -50,11 +50,11 @@ const Hero_Section_V3 = () => {
           </p>
         </div>
       </div>
-      <div className="md:w-full lg:w-[110vh] xl:w-[110vh] ml-5 mt-8 md:mt-[10vh]">
+      <div className="md:w-full lg:w-[110vh] xl:w-[110vh] ml-5 mt-8 md:mt-[10vh] sm:w-[30vh]">
         <img
           src={Landing_Image}
           alt=""
-          className="h-[50vh] md:h-[65vh] lg:h-[65vh] xl:h-[65vh] w-full md:w-[80vh] lg:w-[180vh] xl:w-[180vh] rounded-lg shadow-lg"
+          className="h-[50vh] md:h-[65vh] lg:h-[65vh] xl:h-[65vh] w-full md:w-[80vh] lg:w-[180vh] xl:w-[180vh]  "
         />
       </div>
     </div>

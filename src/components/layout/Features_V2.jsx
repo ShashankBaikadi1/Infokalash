@@ -126,10 +126,10 @@
 
 
 import React, { useState } from 'react';
-import image1 from '../../assets/images/undraw MDM.png'; // adjust the path as needed
-import image2 from '../../assets/images/u2.svg'; // adjust the path as needed
-import image3 from '../../assets/images/Group 61.svg'; // adjust the path as needed
-import image4 from '../../assets/images/card4.png'; // adjust the path as needed
+import image1 from '../../assets/undraw_photos/undraw_growth_chart_r99m.png'; // adjust the path as needed
+import image2 from '../../assets/undraw_photos/undraw_data_processing_yrrv.png'; // adjust the path as needed
+import image3 from '../../assets/undraw_photos/undraw_Business_plan_re_0v81.png'; // adjust the path as needed
+import image4 from '../../assets/undraw_photos/undraw_Investment_data_re_sh9x.png'; // adjust the path as needed
 import clientlogo from '../../assets/images/client-logo.png'; // adjust the path as needed
 
 const features = [
@@ -172,7 +172,7 @@ const FeatureList = () => {
       {/* <div>
         <img src={clientlogo} alt="Client Logo" className="ml-12 w-[195vh]" />
       </div> */}
-      <div className="text-gray-700 font-bold mb-14 text-center text-5xl mt-8">
+      <div className="text-gray-700 font-bold mb-14 text-center text-5xl mt-12">
         Provide <span className="text-blue-700">trusted data</span> with less effort and more adoption
       </div>
       <div className="flex gap-2 bg-[#fbfcfd] pt-12 pb-12 w-[194vh] ml-12 rounded-md border" >

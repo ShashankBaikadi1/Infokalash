@@ -87,9 +87,9 @@
 
 
 import React, { useState, useEffect } from 'react';
-import image1 from '../../assets/images/card1.png';
-import image2 from '../../assets/images/card2.png';
-import image3 from '../../assets/images/card3.png';
+import image1 from '../../assets/undraw_photos/undraw_product_iteration_kjok.png';
+import image2 from '../../assets/undraw_photos/undraw_Segment_re_a3e7.png';
+import image3 from '../../assets/undraw_photos/undraw_Data_extraction_re_0rd3.png';
 
 const CarouselComponent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -97,17 +97,17 @@ const CarouselComponent = () => {
     {
       image: image1,
       title: 'Lorem ipsum dolor sit amet.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis nobis rem optio iusto excepturi quasi numquam illo. Rem, dolorem!',
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perspiciatis nobis rem optio iusto excepturi quasi numquam illo. Rem, dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
     },
     {
       image: image2,
       title: 'Lorem, ipsum dolor.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit voluptas? Optio veniam corrupti numquam.',
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, odit voluptas? Optio veniam corrupti numquam Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?.',
     },
     {
       image: image3,
       title: 'Lorem ipsum dolor sit.',
-      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea!',
+      subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
     },
   ];
 
@@ -126,25 +126,26 @@ const CarouselComponent = () => {
   const handleNextClick = () => {
     setCurrentSlide((currentSlide + 1) % slides.length);
   };
-
+//bg-[#fbfcfd] 
     return (
-    <div className="carousel flex flex-col items-center mx-auto h-[100vh] p- ">
+    <div className="carousel flex flex-col items-center mx-auto h-[100vh]  p- ">
       <div className="text-center mt-[5vh] mb-10 text-5xl font-bold font-geist">
         <span className="text-blue-700">Our </span>Expertise
       </div>
-      <div className="carousel-content relative">
-        <div className="carousel-slide flex justify-center items-center h-[70vh] rounded-md bg-[#fbfcfd] border ml-6 sm:ml-4 md:ml-6 lg:ml-6 xl:ml-6">
-          <div className="flex items-center ml-20 w-[182vh] sm:w-[90vh] md:w-[120vh] lg:w-[182vh] xl:w-[182vh]">
+      
+      <div className="carousel-content relative ">
+        <div className="carousel-slide flex justify-center items-center h-[70vh] rounded-md bg-[#e7ead6] border ml-6 sm:ml-4 md:ml-6 lg:ml-6 xl:ml-6">
+          <div className="flex items-center ml-20 w-[182vh] sm:w-[90vh] md:w-[120vh] lg:w-[182vh] xl:w-[182vh] ">
             <img
               src={slides[currentSlide].image}
               alt={slides[currentSlide].title}
               className="w-[40vh] p-4 h-[] mr-8 sm:w-[30vh] md:w-[35vh] lg:w-[40vh] xl:w-[40vh]"
             />
             <div className="text-left w-[120vh] sm:w-[60vh] md:w-[85vh] lg:w-[120vh] xl:w-[120vh]">
-              <h3 className="slide-title text-lg font-bold w-[60vh] font-geist sm:w-[50vh] md:w-[55vh] lg:w-[60vh] xl:w-[60vh]">
+              <h3 className="slide-title font-bold w-[60vh] font-geist sm:w-[50vh] md:w-[55vh] lg:w-[60vh] xl:w-[60vh] text-2xl">
                 {slides[currentSlide].title}
               </h3>
-              <p className="slide-subtitle font-geist">
+              <p className="slide-subtitle font-geist text-lg">
                 {slides[currentSlide].subtitle}
               </p>
             </div>

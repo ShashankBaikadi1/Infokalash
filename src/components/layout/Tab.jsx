@@ -146,19 +146,19 @@ const IndustryTabs = () => {
       items: [
         {
           title: 'Industry 1',
-          description: 'Description for Industry 1',
+          description: 'Description for Industry 1  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
           imageSrc: image1,
           learnMoreLink: '/solutions/manufacturing-analytics',
         },
         {
           title: 'Industry 2',
-          description: 'Description for Industry 2',
+          description: 'Description for Industry 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
           imageSrc: image1,
           learnMoreLink: '/solutions/manufacturing-analytics',
         },
         {
           title: 'Industry 3',
-          description: 'Description for Industry 3',
+          description: 'Description for Industry 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
           imageSrc: image1,
           learnMoreLink: '/solutions/manufacturing-analytics',
         },
@@ -166,7 +166,7 @@ const IndustryTabs = () => {
           title: 'Industry 4',
           description: 'Description for Industry 4',
           imageSrc: image1,
-          learnMoreLink: '/solutions/manufacturing-analytics',
+          learnMoreLink: '/solutions/manufacturing-analytics Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
         },
       ],
     },
@@ -176,7 +176,7 @@ const IndustryTabs = () => {
       items: [
         {
           title: 'Department 1',
-          description: 'Description for Department 1',
+          description: 'Description for Department 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?',
           imageSrc: image2,
           learnMoreLink: '/solutions/life-sciences',
         },
@@ -194,7 +194,7 @@ const IndustryTabs = () => {
       items: [
         {
           title: 'Use Case 1',
-          description: 'Description for Use Case 1',
+          description: 'Description for Use Case 1  Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus explicabo quo possimus molestias sequi molestiae tenetur, in maiores voluptas debitis minus ipsa ut saepe dignissimos laboriosam recusandae! Alias, eius adipisci?' ,
           imageSrc: image3,
           learnMoreLink: '/solutions/financial-services',
         },

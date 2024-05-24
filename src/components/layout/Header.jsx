@@ -25,11 +25,11 @@
 // }
 
 // export default Header;
-// //#ffffff
-// //bg #1d4ed8
+//#ffffff
+//bg #1d4ed8
 
 import React from 'react';
-import logo from '../../assets/images/v_IK logo.png';
+import logo from '../../assets/images/new_logo.png';
 import { Button} from "@chakra-ui/react";
 import { useState } from 'react';
 const Header = () => {
@@ -40,26 +40,27 @@ const Header = () => {
   
       <a href="/" className="flex items-center">
         <img src={logo} alt="Cleanlab Logo" className="h-8 md:h-10 lg:h-12" loading="eager" />
-        <span className="ml-2 text-xl md:text-2xl lg:text-3xl font-geist">Infokalash</span>
+        <span className="ml-2 text-xl md:text-2xl font-bold lg:text-3xl font-geist">Infokalash</span>
       </a>
 
 
-      <div className="hidden md:flex space-x-6">
+      <div className="hidden md:flex space-x-6 ">
 
         
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
-          <a href="/solutions/">Home</a>
-        </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+      <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold ">
+  <a href="/solutions/">Home</a>
+</span>
+
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/pricing/">Services</a>
         </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/testimonials/">Solutions</a>
         </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/learn/">Partners</a>
         </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/company/">About</a>
         </span>
         
@@ -83,19 +84,19 @@ const Header = () => {
 {isOpen && (
       
         <div className="flex flex-col absolute top-full right-0 w-[15vh] text-center border shadow-lg py-2">
-  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
     <a href="/solutions/">Home</a>
   </span>
-  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
     <a href="/pricing/">Services</a>
   </span>
-  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
     <a href="/testimonials/">Solutions</a>
   </span>
-  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
     <a href="/learn/">Partners</a>
   </span>
-  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300">
+  <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-geist font-semibold">
     <a href="/company/">About</a>
   </span>
  
