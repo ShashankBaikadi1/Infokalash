@@ -12,6 +12,7 @@ import IndustryTabs from '../layout/Tab'
 import ValuesSection from '../../components/layout/ValuesSection'
 import Hero_Section_V3 from '../layout/Hero_Section_V3'
 import CarouselComponent from '../layout/CarouselComponent'
+import Trial from '../layout/Trial'
 
 
 const Home = () => {
@@ -38,6 +39,9 @@ const Home = () => {
  <Client_Carousel/>
  <CallToAction/>
  <Footer/>
+ <div className='sm:hidden '>
+ <Trial/>
+ </div>
     </div>
   )
 }

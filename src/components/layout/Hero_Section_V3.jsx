@@ -51,14 +51,21 @@ const Hero_Section_V3 = () => {
         </div>
       </div>
       <div className="md:w-full lg:w-[110vh] xl:w-[110vh] ml-5 mt-8 md:mt-[10vh] sm:w-[30vh]">
-        <img
+        {/* <img
           src={Landing_Image}
           alt=""
           className="h-[50vh] md:h-[65vh] lg:h-[65vh] xl:h-[65vh] w-full md:w-[80vh] lg:w-[180vh] xl:w-[180vh]  "
-        />
+        /> */}
+
+<img
+  src={Landing_Image}
+  alt=""
+  className="h-[30vh] w-[60vh] -mx-4 md:h-[65vh] md:w-[80vh] lg:w-[180vh] xl:w-[180vh] "
+/>
       </div>
     </div>
   );
 };
 
 export default Hero_Section_V3;
+
