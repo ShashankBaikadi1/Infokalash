@@ -12,26 +12,24 @@ import IndustryTabs from '../layout/Tab'
 import ValuesSection from '../../components/layout/ValuesSection'
 import Hero_Section_V3 from '../layout/Hero_Section_V3'
 import CarouselComponent from '../layout/CarouselComponent'
-import CarouselFeature from '../layout/CarouselFeature'
 
-// import { StickySlider } from '../layout/StickySlider'
+
 const Home = () => {
 
   return (
     <div>
       <Header/>
       <Hero_Section_V3/>
-      {/* <Hero_Section_V2/> */}
-      {/* <CarouselFeature/> */}
+
       <ValuesSection/>
 
       <Features_V2/>
      
       <CarouselComponent />
    
-      <div className=''>
+  
       <IndustryTabs/>
-      </div>
+
    
 
 
