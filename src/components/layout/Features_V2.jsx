@@ -186,9 +186,9 @@ const FeatureList = () => {
                     className={`py-5 px-4 p1 !font-bold cursor-pointer flex items-center justify-between ${selectedFeature === feature.id ? 'text-blue-600' : 'text-gray-600'}`}
                     onClick={() => toggleFeature(feature.id)}
                   >
-                    <div className="flex items-center gap-">
-                      <div className="w-5 flex-none">{String(index + 1).padStart(2, '0')}</div>
-                      <div>{feature.title}</div>
+                    <div className="flex items-center ">
+                    {/* <div className="w-5 p3 flex-none text-md">{String(index + 1).padStart(2, '0')}</div> */}
+                      <div className='text-xl' >{feature.title}</div>
                     </div>
                   </div>
                   <div className={`max-h-0 overflow-hidden ${selectedFeature === feature.id ? 'collapse-transition-open ease-out duration-1500 translate-y-0 max-h-[240px]' : '-translate-y-2 -mb-2 lg:mb-0'}`}>

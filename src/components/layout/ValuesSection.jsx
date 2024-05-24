@@ -328,6 +328,103 @@
 
 
 
+// import React, { useState } from 'react';
+// import image1 from '../../assets/images/card1.png';
+// import image2 from '../../assets/images/card2.png';
+// import image3 from '../../assets/images/card3.png';
+// import image4 from '../../assets/images/card4.png';
+
+// const ValuesSection = () => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   const tabs = [
+//     {
+//       title: 'Community Powered',
+//       text: 'This is the text for Community Powered',
+//       image: image1,
+//     },
+//     {
+//       title: 'Freedom to Innovate',
+//       text: 'This is the text for Freedom to Innovate',
+//       image: image2,
+//     },
+//     {
+//       title: 'Customer Empathy',
+//       text: 'This is the text for Customer Empathy',
+//       image: image3,
+//     },
+//     {
+//       title: 'Do Good',
+//       text: 'This is the text for Do Good',
+//       image: image4,
+//     },
+//   ];
+
+//   return (
+//     <div>
+//       {/* <div className='ml-[25vh] mt-[10vh] text-4xl font-bold font-geist '><span className='text-blue-700'>Infokalash </span> Core Values</div> */}
+//             <h2 className="text-5xl text-center font-bold mb- font-geist mt- bg">Enterprise <span className='text-blue-700'>Need</span></h2>
+//       <div className="flex justify-center items-center h-[70vh] mt-10 bg-[#fbfcfd] border w-[194vh] ml-12 rounded-md">
+//         <div className="w-3/4 flex">
+//           <div className="w-1/4 bg- mt-10 ">
+//             <ul className="list-none ">
+//               {tabs.map((tab, index) => (
+            
+//                 <li
+//   role=""
+
+//   className={` ${index === activeTab ? ' font-bold ' : ''}`}//text-bold on hover 
+ 
+//   tabIndex={index === activeTab ? "" : "-1"}
+ 
+//   aria-selected={index === activeTab}
+//   onMouseEnter={() => setActiveTab(index)}
+  
+//   style={{
+//     position: 'relative',
+//   }}
+// >
+//   <h4 className="ml-8 p-2 text-xl font-roboto  ">{tab.title}</h4>
+//   <span
+//     className=" -mt-[9.5vh]"//line up d down 
+//     style={{
+//       position: 'absolute',
+//       left: 0,
+//       height: '13vh',
+//       backgroundColor: '#a3a3a3',
+//       transition: 'all 0.3s',
+//       width: '2%',
+//       zIndex: 1,
+//     }}
+//   ></span>
+//   <span
+//     className={`-mt-10  absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-black w-1.5 ' : 'bg-black w-0 '}`}
+//     style={{
+//       zIndex: 2,
+//     }}
+//   ></span>
+// </li>
+//               ))}
+//             </ul>
+//           </div>
+         
+//           <div className="p-6 rounded-md border border-black w-[120vh] h-[50vh] translate-x-12 text-center flex">
+//   {tabs.map((tab, index) => (
+//     <div key={index} className={` ${index !== activeTab ? 'hidden' : ''}`}>
+//       <img src={tab.image} alt={tab.title} className="h-48 mb-4" />
+//       <p className="text-lg">{tab.text}</p>
+//     </div>
+//   ))}
+// </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ValuesSection;
+
+
 import React, { useState } from 'react';
 import image1 from '../../assets/images/card1.png';
 import image2 from '../../assets/images/card2.png';
@@ -361,31 +458,22 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div>
-      {/* <div className='ml-[25vh] mt-[10vh] text-4xl font-bold font-geist '><span className='text-blue-700'>Infokalash </span> Core Values</div> */}
-            <h2 className="text-5xl text-center font-bold mb- font-geist mt-10 bg">Enterprise <span className='text-blue-700'>Need</span></h2>
-      <div className="flex justify-center items-center h-[70vh] mt-10 bg-[#fbfcfd] border w-[194vh] ml-12 rounded-md">
-        <div className="w-3/4 flex">
-          <div className="w-1/4 bg- mt-10 ">
+    <div className="px-4 sm:px-4 md:px-8 xl:px-0">
+      <h2 className="text-2xl text-center font-bold mb- font-geist mt- bg sm:text-2xl md:text-3xl xl:text-5xl">Enterprise <span className='text-blue-700'>Need</span></h2>
+      <div className="flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#fbfcfd] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md">
+        <div className="w-full sm:w-3/4 flex flex-col sm:flex-row">
+          <div className="w-full sm:w-1/4 bg- mt-10 ">
             <ul className="list-none ">
               {tabs.map((tab, index) => (
-            
                 <li
-  role=""
-
-  className={` ${index === activeTab ? ' font-bold ' : ''}`}//text-bold on hover 
- 
-  tabIndex={index === activeTab ? "" : "-1"}
- 
-  aria-selected={index === activeTab}
-  onMouseEnter={() => setActiveTab(index)}
-  
-  style={{
-    position: 'relative',
-  }}
->
-  <h4 className="ml-8 p-2 text-xl font-roboto  ">{tab.title}</h4>
-  <span
+                  className={` ${index === activeTab ? ' font-bold ' : ''}`}
+                  tabIndex={index === activeTab ? "" : "-1"}
+                  aria-selected={index === activeTab}
+                  onMouseEnter={() => setActiveTab(index)}
+                  style={{ position: 'relative' }}
+                >
+                  <h4 className="ml-8 p-2 text-lg font-roboto sm:text-lg md:text-xl xl:text-xl">{tab.title}</h4>
+                  <span
     className=" -mt-[9.5vh]"//line up d down 
     style={{
       position: 'absolute',
@@ -403,19 +491,18 @@ const ValuesSection = () => {
       zIndex: 2,
     }}
   ></span>
-</li>
+                </li>
               ))}
             </ul>
           </div>
-         
-          <div className="p-6 rounded-md border border-black w-[120vh] h-[50vh] translate-x-12 text-center flex">
-  {tabs.map((tab, index) => (
-    <div key={index} className={` ${index !== activeTab ? 'hidden' : ''}`}>
-      <img src={tab.image} alt={tab.title} className="h-48 mb-4" />
-      <p className="text-lg">{tab.text}</p>
-    </div>
-  ))}
-</div>
+          <div className="p-6 rounded-md border border-black w-full h-auto sm:h-[50vh] translate-x-12 text-center flex sm:w-full md:w-3/4 xl:w-[120vh]">
+            {tabs.map((tab, index) => (
+              <div key={index} className={` ${index !== activeTab ? 'hidden' : ''}`}>
+                <img src={tab.image} alt={tab.title} className="h-24 mb-4 sm:h-24 md:h-36 xl:h-48" />
+                <p className="text-base sm:text-base md:text-lg xl:text-lg">{tab.text}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
@@ -423,5 +510,3 @@ const ValuesSection = () => {
 };
 
 export default ValuesSection;
-
-
