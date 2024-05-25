@@ -21,9 +21,9 @@ const Home = () => {
       <Client_Carousel/>
       <CallToAction/>
       <Footer/>
-      <div className='mt-10'>
+      {/* <div className='sm:'>
         <Trial/>
-      </div>
+      </div> */}
     </div>
   )
 }

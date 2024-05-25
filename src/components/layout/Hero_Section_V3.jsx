@@ -41,12 +41,11 @@ const Hero_Section_V3 = () => {
       <div className="mt-10 md:mt-32 xl:mt-32 px-8 md:px-16 xl:px-8">
         <div className="md:w-full xl:w-[80vh]">
           <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold mb-6 text-[#000000]">
-            Create faster <br /> writing drafts <br /> with <span className='text-blue-700'> AI</span>
+          Data to  <span className='text-blue-700'>Decision</span> : <br /> <span className='text-blue-700'>Reports</span> <span className=''>to </span> <span className=''> Results</span>
           </h1>
+
           <p className="text-sm md:text-lg xl:text-xl mb-8">
-            Whether you're writing a speech, email or a meal plan, add your
-            writing ideas to Compose within Microsoft Edge sidebar and get
-            AI-generated draft to get you started, wherever you write online.
+          Transform your data into actionable insights. Empower your business to make informed decisions and achieve measurable results.
           </p>
         </div>
       </div>
