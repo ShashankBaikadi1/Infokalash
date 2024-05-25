@@ -10,10 +10,9 @@ const Trial = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
-
-      <div className='bg-pink-200 p-12 w-[105vh]'>
-        <div className='flex flex-col justify-center items-center bg-green-200 h-[50vh]'>
-          <img src={image2} alt="Description"  className='h-[30vh]'  />
+      <div className='p-12 bg-red-200 w-[105vh]'>
+        <div className='flex flex-col justify-center items-center  bg-green-200 h-[50vh] w-[55vh] rounded-md'>
+          <img src={image1} alt="Description" className='h-[30vh] mb-10 rounded-lg' />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
       </div>
