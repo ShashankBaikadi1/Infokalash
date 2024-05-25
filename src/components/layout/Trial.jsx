@@ -1,15 +1,21 @@
 import React from 'react'
-
+import image1 from '../../assets/undraw_photos/undraw_data_reports_706v.png'
+import image2 from '../../assets/undraw_photos/undraw_data_reports_706v.png'
 const Trial = () => {
   return (
     <div className='flex'>
-      <div className='p-12 bg-red-200 mr-12 w-[100vh]'>
-trail box 1
+      <div className='p-12 bg-red-200 w-[105vh]'>
+        <div className='flex flex-col justify-center items-center  bg-green-200 h-[50vh] w-[55vh] rounded-md'>
+          <img src={image1} alt="Description" className='h-[30vh] mb-10 rounded-lg' />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
 
-
-      <div className='bg-pink-200 p-12 w-[100vh]'>
-trial box 2
+      <div className='bg-pink-200 p-12 w-[105vh]'>
+        <div className='flex flex-col justify-center items-center bg-green-200 h-[50vh]'>
+          <img src={image2} alt="Description"  className='h-[30vh]'  />
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
       </div>
     </div>
   )
