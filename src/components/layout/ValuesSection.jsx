@@ -425,6 +425,99 @@
 // export default ValuesSection;
 
 
+// import React, { useState } from 'react';
+// import image1 from '../../assets/undraw_photos/undraw_All_the_data_re_hh4w.png';
+// import image2 from '../../assets/undraw_photos/undraw_Data_extraction_re_0rd3.png';
+// import image3 from '../../assets/undraw_photos/undraw_Data_points_re_vkpq.png';
+// import image4 from '../../assets/undraw_photos/undraw_All_the_data_re_hh4w.png';
+
+// const ValuesSection = () => {
+//   const [activeTab, setActiveTab] = useState(0);
+
+//   const tabs = [
+//     {
+//       title: 'Community Powered',
+//       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
+//       subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+//       image: image1,
+//     },
+//     {
+//       title: 'Freedom to Innovate',
+//       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
+//       subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nescrepellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+//       image: image2,
+//     },
+//     {
+//       title: 'Customer Empathy',
+//       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
+//       subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+//       image: image3,
+//     },
+//     {
+//       title: 'Do Good',
+//       text: 'Lorem ipsum dolor sit amet quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
+//       subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+//       image: image4,
+//     },
+//   ];
+
+//   return (
+//     <div className="px-4 sm:px-4 md:px-8 xl:px-0">
+//       <h2 className="text-2xl text-center font-bold mb- font-geist mt- bg sm:text-2xl md:text-3xl xl:text-5xl">Enterprise <span className='text-blue-700'>Need</span></h2>
+//       <div className="flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md">
+//         <div className="w-full sm:w-3/4 flex flex-col sm:flex-row">
+//           <div className="w-full sm:w-1/4 bg- mt-10 ">
+//             <ul className="list-none ">
+//               {tabs.map((tab, index) => (
+//                 <li
+//                   className={` ${index === activeTab ? ' font-bold ' : ''}`}
+//                   tabIndex={index === activeTab ? "" : "-1"}
+//                   aria-selected={index === activeTab}
+//                   onMouseEnter={() => setActiveTab(index)}
+//                   style={{ position: 'relative' }}
+//                 >
+//                   <h4 className="ml-8 p-2 text-lg font-roboto sm:text-lg md:text-xl xl:text-xl ">{tab.title}</h4>
+//                   <span
+//     className=" -mt-[9.5vh]"//line up d down 
+//     style={{
+//       position: 'absolute',
+//       left: 0,
+//       height: '13vh',
+//       backgroundColor: '#a3a3a3',
+//       transition: 'all 0.3s',
+//       width: '2%',
+//       zIndex: 1,
+//     }}
+//   ></span>
+//   <span
+//     className={`-mt-10  absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-black w-1.5 ' : 'bg-black w-0 '}`}
+//     style={{
+//       zIndex: 2,
+//     }}
+//   ></span>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//               <div className="p-6 rounded-md border border-black w-full h-auto sm:h-[50vh] translate-x-12 text-center flex sm:w-full md:w-3/4 xl:w-[120vh]">
+//             {tabs.map((tab, index) => (
+//               <div key={index} className={` ${index !== activeTab ? 'hidden' : ''}`}>
+//                 <div className='flex'>
+//                 <img src={tab.image} alt={tab.title} className="h-24 mb-4 sm:h-24 md:h-36 xl:h-48" />
+//                 <p className="text-base sm:text-base md:text-lg xl:text-lg  ml-2 font-geist text-justify h-[26vh]">{tab.text}</p>
+//                 </div>
+//                 <p className='font-geist text-left'>{tab.subtext}</p>
+//               </div>
+//             ))}
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default ValuesSection;
+
 import React, { useState } from 'react';
 import image1 from '../../assets/undraw_photos/undraw_All_the_data_re_hh4w.png';
 import image2 from '../../assets/undraw_photos/undraw_Data_extraction_re_0rd3.png';
@@ -438,73 +531,80 @@ const ValuesSection = () => {
     {
       title: 'Community Powered',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
-      subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+      subtext: "Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
       image: image1,
     },
     {
       title: 'Freedom to Innovate',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
-      subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nescrepellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+      subtext: "Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nescrepellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
       image: image2,
     },
     {
       title: 'Customer Empathy',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi praesentium, reprehenderit veritatis repudiandae consequuntur quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
-      subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+      subtext: "Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
       image: image3,
     },
     {
       title: 'Do Good',
       text: 'Lorem ipsum dolor sit amet quibusdam ad alias corrupti commodi obcaecati veniam excepturi fuga, quaerat explicabo in perferendis numquam modi velit quia qui laboriosam. Blanditiis distinctio cumque quam. Doloremque maiores, accusantium ratione quo ',
-      subtext:"Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
+      subtext: "Lorem, ipsum dolor sitamet consectetur adipisicing elit. Exercitationem eligendi nesciunt officiis nam magni omnis facilis hic, repellendus sequi distinctio maiores laborum consectetur id quae, quidem illo? Doloribus reprehenderit laboriosam eligendi quae, temporibus alias deserunt quam, amet, quia sapiente laudantium  Lorem, ipsum dolor sit amet consectetur adipisicing elit hsds  hsdsj jnnsdn jsdjjdj sjdjd jsjds djiefe jiejfiejijif kkkjeeriejdjsj jdjsjsd jsdjjd iwejeiji jejfje jejdj jd jkjjdk jdwsdk .",
       image: image4,
     },
   ];
 
   return (
     <div className="px-4 sm:px-4 md:px-8 xl:px-0">
-      <h2 className="text-2xl text-center font-bold mb- font-geist mt- bg sm:text-2xl md:text-3xl xl:text-5xl">Enterprise <span className='text-blue-700'>Need</span></h2>
-      <div className="flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md">
+      <h2 className="text-2xl text-center font-bold mb-4 font-geist mt-4 bg sm:text-2xl md:text-3xl xl:text-5xl">
+        Enterprise <span className="text-blue-700">Need</span>
+      </h2>
+      <div className="hidden xl:flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md">
         <div className="w-full sm:w-3/4 flex flex-col sm:flex-row">
-          <div className="w-full sm:w-1/4 bg- mt-10 ">
-            <ul className="list-none ">
+          <div className="w-full sm:w-1/4 mt-10">
+            <ul className="list-none">
               {tabs.map((tab, index) => (
                 <li
-                  className={` ${index === activeTab ? ' font-bold ' : ''}`}
+                  key={index}
+                  className={`${index === activeTab ? 'font-bold' : ''}`}
                   tabIndex={index === activeTab ? "" : "-1"}
                   aria-selected={index === activeTab}
                   onMouseEnter={() => setActiveTab(index)}
                   style={{ position: 'relative' }}
                 >
-                  <h4 className="ml-8 p-2 text-lg font-roboto sm:text-lg md:text-xl xl:text-xl ">{tab.title}</h4>
+                  <h4 className="ml-8 p-2 text-lg font-roboto sm:text-lg md:text-xl xl:text-xl">
+                    {tab.title}
+                  </h4>
                   <span
-    className=" -mt-[9.5vh]"//line up d down 
-    style={{
-      position: 'absolute',
-      left: 0,
-      height: '13vh',
-      backgroundColor: '#a3a3a3',
-      transition: 'all 0.3s',
-      width: '2%',
-      zIndex: 1,
-    }}
-  ></span>
-  <span
-    className={`-mt-10  absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-black w-1.5 ' : 'bg-black w-0 '}`}
-    style={{
-      zIndex: 2,
-    }}
-  ></span>
+                    className=" -mt-[9.5vh]"
+                    style={{
+                      position: 'absolute',
+                      left: 0,
+                      height: '13vh',
+                      backgroundColor: '#a3a3a3',
+                      transition: 'all 0.3s',
+                      width: '2%',
+                      zIndex: 1,
+                    }}
+                  ></span>
+                  <span
+                    className={`-mt-10 absolute left-0 h-[5vh] transition-all duration-300 ${index === activeTab ? 'bg-black w-1.5' : 'bg-black w-0'}`}
+                    style={{
+                      zIndex: 2,
+                    }}
+                  ></span>
                 </li>
               ))}
             </ul>
           </div>
-              <div className="p-6 rounded-md border border-black w-full h-auto sm:h-[50vh] translate-x-12 text-center flex sm:w-full md:w-3/4 xl:w-[120vh]">
+          <div className="p-6 rounded-md border border-black w-full h-auto sm:h-[50vh] translate-x-12 text-center flex sm:w-full md:w-3/4 xl:w-[120vh]">
             {tabs.map((tab, index) => (
-              <div key={index} className={` ${index !== activeTab ? 'hidden' : ''}`}>
+              <div key={index} className={`${index !== activeTab ? 'hidden' : ''}`}>
                 <div className='flex'>
-                <img src={tab.image} alt={tab.title} className="h-24 mb-4 sm:h-24 md:h-36 xl:h-48" />
-                <p className="text-base sm:text-base md:text-lg xl:text-lg  ml-2 font-geist text-justify h-[26vh]">{tab.text}</p>
+                  <img src={tab.image} alt={tab.title} className="h-24 mb-4 sm:h-24 md:h-36 xl:h-48" />
+                  <p className="text-base sm:text-base md:text-lg xl:text-lg ml-2 font-geist text-justify h-[26vh]">
+                    {tab.text}
+                  </p>
                 </div>
                 <p className='font-geist text-left'>{tab.subtext}</p>
               </div>
@@ -512,13 +612,38 @@ const ValuesSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Responsive design for medium and small screens */}
+      <div className="sm:flex md:flex xl:hidden flex-col justify-center items-center mt-10">
+        {tabs.map((tab, index) => (
+          <div
+            key={index}
+            className="bg-[#e7ead6] border rounded-md mb-4 w-full sm:w-3/4 md:w-3/4"
+          >
+            <div className="flex flex-col sm:flex-row md:flex-row">
+              <img
+                src={tab.image}
+                alt={tab.title}
+                className="h-24 sm:h-24 md:h-36 p-4"
+              />
+              <div className="p-4">
+                <h4 className="text-lg font-roboto sm:text-lg md:text-xl xl:text-xl font-bold">
+                  {tab.title}
+                </h4>
+                <p className="text-base sm:text-base md:text-lg xl:text-lg font-geist text-justify">
+                  {tab.text}
+                </p>
+                <p className="font-geist text-left mt-2">{tab.subtext}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
 export default ValuesSection;
-
-
 
 
 // import React, { useState } from 'react';

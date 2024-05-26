@@ -48,7 +48,7 @@ const Header = () => {
 
         
       <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold ">
-  <a href="/solutions/">Home</a>
+  <a href="https://form.jotform.com/241464329107454">Home</a>
 </span>
 
         <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
@@ -67,10 +67,16 @@ const Header = () => {
       </div>
 
    
-      <div className="flex items-center space-x-4">
-      <Button to="/login" bg='#000000' borderColor='#ccd0d5' color='#ffffff' size={['sm', 'md', 'lg']}>Contact Us</Button>
+      {/* <div className="flex items-center space-x-4">
+      <Button to="https://form.jotform.com/241464329107454" bg='#000000' borderColor='#ccd0d5' color='#ffffff' size={['sm', 'md', 'lg']}>Contact Us</Button>
 
-      </div>
+      </div> */}
+
+<div className="flex items-center space-x-4">
+  <a href="https://form.jotform.com/241464329107454" target="_blank" rel="noopener noreferrer">
+    <Button bg='#000000' borderColor='#ccd0d5' color='#ffffff' size={['sm', 'md', 'lg']}>Contact Us</Button>
+  </a>
+</div>
 
        <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)} className="text-gray-700 hover:text-gray-900 transition-colors duration-300">

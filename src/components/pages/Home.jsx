@@ -37,11 +37,11 @@ import IndustryTabs from '../layout/Tab'
 import ValuesSection from '../../components/layout/ValuesSection'
 import Hero_Section_V3 from '../layout/Hero_Section_V3'
 import CarouselComponent from '../layout/CarouselComponent'
-import Trial from '../layout/Trial'
+// import Trial from '../layout/Trial'
 
 const Home = () => {
   return (
-    <div className='container mx-auto flex flex-col items-center justify-center'>
+    <div className=''>
       <Header/>
       <Hero_Section_V3/>
       <ValuesSection/>
