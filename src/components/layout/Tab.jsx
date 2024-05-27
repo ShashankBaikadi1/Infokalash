@@ -311,6 +311,24 @@ const IndustryTabs = () => {
 export default IndustryTabs;
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // import React, { useState } from 'react';
 // import image1 from '../../assets/images/card1.png';
 
