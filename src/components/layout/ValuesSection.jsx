@@ -555,11 +555,11 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-4 md:px-8 xl:px-0">
-      <h2 className="text-2xl text-center font-bold mb-4 font-geist mt-4 bg sm:text-2xl md:text-3xl xl:text-5xl">
+    <div className=" ">
+      <h2 className="text-4xl text-center font-bold mb-4 font-geist mt-4 bg sm:text-2xl md:text-3xl xl:text-5xl">
         Enterprise <span className="text-blue-700">Need</span>
       </h2>
-      <div className="hidden xl:flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md">
+      <div className="hidden xl:flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md ">
         <div className="w-full sm:w-3/4 flex flex-col sm:flex-row">
           <div className="w-full sm:w-1/4 mt-10">
             <ul className="list-none">
@@ -618,7 +618,7 @@ const ValuesSection = () => {
         {tabs.map((tab, index) => (
           <div
             key={index}
-            className="bg-[#e7ead6] border rounded-md mb-4 w-full sm:w-3/4 md:w-3/4"
+            className="bg-[#e7ead6] border rounded-md mb-4 w-full sm:w-3/4 ipad:text-base ipad:px-4 md:w-[125vh]  "
           >
             <div className="flex flex-col sm:flex-row md:flex-row">
               <img

@@ -14,6 +14,9 @@ export default {
         sans: ['sans-serif'],
         geist: ['Geist', 'sans-serif'],
       },
+      screens: {
+        'ipad': {'raw': '(min-width: 1180px) and (max-width: 820px)'}
+      }
     },
   },
   plugins: [],

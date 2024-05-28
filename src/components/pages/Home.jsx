@@ -50,10 +50,10 @@ const Home = () => {
       <Features_V2/>
       <SolutionsSection/>
       <CarouselComponent />
-      <div className=" lg:hidden">
+      <div className="md:hidden ">
         <IndustryTabs />
       </div>
-
+{/* <Tabs/> */}
       <Client_Carousel/>
       <CallToAction/>
       <Footer/>

@@ -34,7 +34,7 @@ const Footer = () => {
             <p className="text-gray-400 mb-4">
               Stay up-to-date with our latest news and updates.
             </p>
-            <div className="flex">
+            {/* <div className="flex">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -43,7 +43,7 @@ const Footer = () => {
               <button className="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-r-md">
                 Subscribe
               </button>
-            </div>
+            </div> */}
           </div>
           <div className='ml-14'>
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
@@ -58,13 +58,13 @@ const Footer = () => {
                 <a href="#" className="hover:text-white">Solutions</a>
               </li>
            
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a href="#" className="hover:text-white">Partners</a>
-              </li>
+              </li> */}
              
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <a href="#" className="hover:text-white">About Us</a>
-              </li>
+              </li> */}
               <li className="mb-2">
                 <a href="#" className="hover:text-white">Contact Us</a>
               </li>

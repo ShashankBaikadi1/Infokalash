@@ -380,11 +380,11 @@ const FeatureList = () => {
   };
 
   return (
-    <div className="container mx-auto overflow-x-0 font-geist p-4 lg:p-12 ">
-      <div className="text-gray-700 font-bold mb-8 text-center text-3xl lg:text-5xl mt-8 lg:mt-12">
+    <div className="container mx-auto overflow-x-0 font-geist mt-10  lg:  ">
+      <div className="text-gray-700 font-bold mb-8 text-center text-xl lg:text-3xl mt-8 lg:mt-12 md:text-3xl">
         Provide <span className="text-blue-700">trusted data</span> with less effort and more adoption
       </div>
-      <div className="flex flex-col lg:flex-row gap-6 bg-[#fbfcfd] pt-8 pr-4 pl-4 pb-8 lg:pt-12 lg:pb-12 w-full mx-auto rounded-md border max-w-screen-lg ">
+      <div className="flex flex-col lg:flex-row gap-6 bg-[#fbfcfd] pt-8 pr-4 pl-4 pb-8 lg:pt-12 lg:pb-12 w-full mx-auto rounded-md border max-w-[1400px] lg:mt-12 ">
         <div className="flex flex-col lg:w-1/2 overflow-hidden rounded-lg mx-auto lg:mx-0  ">
           {features.map((feature, index) => (
             <div key={feature.id} className={`${selectedFeature === feature.id ? 'border border-black rounded-lg' : 'border-b-2 border-blue-50'} ease-in-expo duration-3000 w-full`}>
