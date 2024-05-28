@@ -141,7 +141,7 @@ const SolutionsSection = () => {
     <div className="flex flex-col gap-5 p-5">
       <div className="border  rounded-t-lg overflow-hidden flex flex-col bg-[#fbfcfd] w-[125vh] ml-12">
         <div className="p-5">
-          <h2 className="text-md mb-2 font-geist font-medium ">Auto ML</h2>
+          <h2 className="text-md mb-2 font-geist font-semibold">Auto ML</h2>
           <div className="text-xl mb-2 font-geist font-bold ">
             Automatically train and tune robust models via the world’s most advanced AutoML.
           </div>
