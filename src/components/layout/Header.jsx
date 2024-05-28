@@ -47,22 +47,22 @@ const Header = () => {
       <div className="hidden md:flex space-x-6 ">
 
         
-      <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold ">
+      <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-bold ">
   <a href="https://form.jotform.com/241464329107454">Home</a>
 </span>
 
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-bold">
           <a href="/pricing/">Services</a>
         </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
+        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-bold">
           <a href="/testimonials/">Solutions</a>
         </span>
-        <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
+        {/* <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/learn/">Partners</a>
         </span>
         <span className="text-gray-700 hover:text-gray-900 transition-colors duration-300 font-semibold">
           <a href="/company/">About</a>
-        </span>
+        </span> */}
         
       </div>
 

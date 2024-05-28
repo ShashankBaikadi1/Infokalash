@@ -15,7 +15,7 @@ const Client_Carousel = () => {
         <div className=''>
    
        
-          <div className="w- h-38 flex items-center justify-center text-black mt-12">
+          <div className="w- h-38 flex items-center justify-center text-black mt-16">
             <div className="w-full flex flex-col items-center justify-center">
               <h1 className="text-3xl font-medium mb-2 text-[#02203c]">With Great Outcomes.</h1>
               <p className="text-lg font-light mb-10 text-[#7c8e9a]">Our customers have gotten offers from awesome companies.</p>

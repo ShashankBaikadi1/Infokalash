@@ -556,7 +556,7 @@ const ValuesSection = () => {
 
   return (
     <div className=" ">
-      <h2 className="text-4xl text-center font-bold mb-4 font-geist mt-4 bg sm:text-2xl md:text-3xl xl:text-5xl">
+      <h2 className="text-4xl text-center font-bold mb-16 font-geist mt-16 bg sm:text-2xl md:text-3xl xl:text-5xl ">
         Enterprise <span className="text-blue-700">Need</span>
       </h2>
       <div className="hidden xl:flex flex-col sm:flex-row justify-center items-center h-auto sm:h-[70vh] mt-10 bg-[#e7ead6] border w-full sm:w-full md:w-3/4 xl:w-[194vh] ml-12 rounded-md ">
