@@ -217,7 +217,7 @@ const CarouselComponent = () => {
   return (
     <div className="carousel flex flex-col items-center mx-auto  bg-[#fbfcfd] p-5">
       <div className="text-center mt-10 mb-10 text-3xl font-bold font-geist">
-        <span className="text-blue-700">Our </span>Expertise
+        <span className="text-blue-700">Our Expertise </span> :  Driving Excellence in <span className='text-blue-700'>Data Engineering </span>and Beyond
       </div>
       
       <div className="carousel-content relative w-full max-w-6xl">

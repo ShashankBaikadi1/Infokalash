@@ -47,10 +47,13 @@ const Home = () => {
       <Header/>
       <Hero_Section_V3/>
       <ValuesSection/>
-      <Features_V2/>
+      <Features_V2/> 
+      <div className="lg:hidden">
       <SolutionsSection/>
+      </div>
       <CarouselComponent />
-      <div className="md:hidden ">
+   
+      <div className="md:hidden  ">
         <IndustryTabs />
       </div>
 {/* <Tabs/> */}

@@ -40,12 +40,12 @@ const Hero_Section_V3 = () => {
     <div className="flex flex-col md:flex-row bg-white h-[75vh] ml-5 md:ml-0 xl:ml-5 font-geist  ">
       <div className="mt-10 md:mt-32 xl:mt-32 px-8 md:px-16 xl:px-8">
         <div className="md:w-full xl:w-[80vh]">
-          <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold mb-6 text-[#000000]">
-          Data to  <span className='text-blue-700'>Decision</span> : <br /> <span className='text-blue-700'>Reports</span> <span className=''>to </span> <span className=''> Results</span>
+          <h1 className="text-2xl md:text-4xl xl:text-6xl font-bold mb-6 text-[#000000] lg:w-[80vh] w-[60vh]  text-left md:w-[60vh] ">
+          Transform Your Enterprise <span className='text-blue-700'>Data</span>  <span className='text-black'>Journey with Intelligent</span> <span className=''>Intelligent </span> <span className=''> Solutions.</span>
           </h1>
 
           <p className="text-sm md:text-lg xl:text-xl mb-8  lg:w-[45vh]">
-          Transform your data into actionable insights. Empower your business to make informed decisions and achieve measurable results.
+          Empowering enterprises with comprehensive data solutions, innovative technology, and a strong culture of data-driven success.
           </p>
         </div>
       </div>
